@@ -19,20 +19,7 @@
 body{
     font-family: $main-font;
     background-color: #eaeaea;
-    .primary-button{
-        background-color: $button-color;
-        border: solid 1px $button-color;
-        color: $white-color;
-        padding: 0 1.375em;
-        height: $button-height;
-        font-size: 12px;
-        cursor: pointer;
-        @extend .DisplayBlock;
-        &:hover{
-            border-color: $button-hover-color;
-            background-color: $button-hover-color
-        }
-    }
+   
     div.header{
         height: 3rem;
         header{
