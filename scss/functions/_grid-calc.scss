@@ -1,0 +1,3 @@
+@function column-width($col, $total:12) {  
+  @return percentage($col/$total);  
+ }
