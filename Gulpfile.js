@@ -4,8 +4,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
-var input = './assets/scss/*.scss';
-var output = './assets/css';
+var input = './scss/*.scss';
+var output = './dist';
 
 var sassOptions = {
   errLogToConsole: true,
@@ -23,7 +23,7 @@ gulp.task('serve', ['sass'], function() {
         }
     });
 
-    gulp.watch("assets/scss/**/*.scss", ['sass']);
+    gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
