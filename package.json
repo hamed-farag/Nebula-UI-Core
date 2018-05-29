@@ -10,13 +10,16 @@
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.24.4",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-mocha": "^6.0.0",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "mocha": "^5.2.0",
+    "sass-true": "^4.0.0"
   },
   "scripts": {
     "start": "gulp",
     "watch": "gulp --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC"
