@@ -1,345 +1,265 @@
 @import 'core/_reset.scss';
 @import 'core/_fonts.scss';
 @import 'core/_colors.scss';
+@import 'core/_breakpoints.scss';
+@import 'core/_global.scss';
+@import 'core/_page-layout.scss';
 @import 'components/_buttons.scss';
 @import 'functions/_grid-calc.scss';
 
-@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-    -webkit-box-shadow:$top $left $blur $color #{$inset};
-    -moz-box-shadow:$top $left $blur $color #{$inset};
-    box-shadow:$top $left $blur $color #{$inset};
-  }
 
-
-/**********General Styles**********/
-.Marg0auto{margin: 0 auto}
-.DisplayBlock{display: block}
-.FL{float: left;}
-
-body{
-    font-family: $main-font;
-    background-color: #eaeaea;
-   
-    div.header{
-        height: 3rem;
-        header{
-            @include box-shadow(0px, 0px, 3px, 0px, rgba(0,0,0,0.2));
-            width:100%;
-            position: fixed;
-            background-color: $lightgrey-color;
-            z-index: 4;
-            ul{
-                list-style: none;
-                li{
-                    display: inline;
-                    margin-right: 0.625rem;
-                    .side-panel-button{
-                        @extend div.header;
-                        background: transparent;
-                        border-right: 1px solid #ddd;
-                        border-left:1px solid #ddd;
-                        border-top: none;
-                        border-bottom: none;
-                        font-size: 1.125rem;
-                        color: $primary-color;
-                        padding: 0 0.875rem;
-                        cursor: pointer;
-                    }
-                    a.logo{
-                        padding: 0.625rem 0;
-                        transition: opacity 0.25s;
-                        &:hover{
-                            opacity: 0.75;
-                        }
-                    }
-                    .logo img{
-                        @extend div.header;
-                        width:75px;
-                        height: 28px;
-                        margin-left: 0.375rem;
-                        margin-right: 1.125rem;
-                        vertical-align: middle
-                    }
-                }
-            }
-        }
-    }
-}
-
-[class^="xl-desktop-col"]{
-    @extend .FL;
-}
-
-/**********Media Queries**********/
-$phone: "only screen and (min-width : 320px)";
-$tablet: "only screen and (min-width : 480px)";
-$desktop: "only screen and (min-width : 768px)";
-$lg-desktop: "only screen and (min-width : 992px)";
-$xl-desktop: "only screen and (min-width : 1024px)";
-
-@media #{$phone} {
+@media #{$sm} {
     body{
-        background-color: #000;
         /**********Phone Grid System**********/
         .phone-col-1{  
             width: column-width(1);  
-
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-2{  
             width: column-width(2);  
- 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-3{  
-            width: column-width(3);   
-
+            width: column-width(3);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-4{  
-            width: column-width(4);   
-
+            width: column-width(4);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
         }
         .phone-col-5{  
             width: column-width(5);   
-
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-6{  
-            width: column-width(6);   
-
+            width: column-width(6); 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;    
         }
         .phone-col-7{  
-            width: column-width(7);   
-
+            width: column-width(7); 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;    
         }
         .phone-col-8{  
-            width: column-width(8);   
-
+            width: column-width(8); 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;    
         }
         .phone-col-9{  
             width: column-width(9);   
-
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-10{  
-            width: column-width(10);  
- 
+            width: column-width(10); 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
+
         }
         .phone-col-11{  
             width: column-width(11);   
-
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
         }
         .phone-col-12{  
             width: column-width(12);   
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
 
         }
 
     }
   }
-@media #{$tablet} {
+@media #{$md} {
   body{
-      background-color: #272727;
-      .tablet-col-1{  
+      .sm-col-1{  
         width: column-width(1);  
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-2{  
+    .sm-col-2{  
         width: column-width(2);  
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
  
     }
-    .tablet-col-3{  
+    .sm-col-3{  
         width: column-width(3);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-4{  
+    .sm-col-4{  
         width: column-width(4);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-5{  
-        width: column-width(5);   
+    .sm-col-5{  
+        width: column-width(5); 
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-6{  
-        width: column-width(6);   
+    .sm-col-6{  
+        width: column-width(6);  
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;   
 
     }
-    .tablet-col-7{  
+    .sm-col-7{  
         width: column-width(7);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;
 
     }
-    .tablet-col-8{  
-        width: column-width(8);   
+    .sm-col-8{  
+        width: column-width(8);  
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;   
 
     }
-    .tablet-col-9{  
+    .sm-col-9{  
         width: column-width(9);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-10{  
+    .sm-col-10{  
         width: column-width(10);  
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
  
     }
-    .tablet-col-11{  
+    .sm-col-11{  
         width: column-width(11);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
-    .tablet-col-12{  
+    .sm-col-12{  
         width: column-width(12);   
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;  
 
     }
   }
 }
-@media #{$desktop} {
+@media #{$lg} {
     body{
-        background-color: #545454;
-        .desktop-col-1 {  
+        .md-col-1 {  
             width: column-width(1);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
 
         }
-        .desktop-col-2 {  
+        .md-col-2 {  
             width: column-width(2);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
  
         }
-        .desktop-col-3 {  
-            width: column-width(3);   
+        .md-col-3 {  
+            width: column-width(3);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
-        .desktop-col-4 {  
-            width: column-width(4);   
+        .md-col-4 {  
+            width: column-width(4);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
-        .desktop-col-5 {  
+        .md-col-5 {  
             width: column-width(5);   
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
 
         }
-        .desktop-col-6 {  
-            width: column-width(6);   
+        .md-col-6 {  
+            width: column-width(6);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
-        .desktop-col-7 {  
-            width: column-width(7);   
+        .md-col-7 {  
+            width: column-width(7);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
-        .desktop-col-8 {  
+        .md-col-8 {  
             width: column-width(8);   
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
 
         }
-        .desktop-col-9 {  
-            width: column-width(9);   
+        .md-col-9 {  
+            width: column-width(9);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
-        .desktop-col-10 {  
+        .md-col-10 {  
             width: column-width(10);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;  
  
         }
-        .desktop-col-11 {  
-            width: column-width(11);   
+        .md-col-11 {  
+            width: column-width(11); 
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;    
 
         }
-        .desktop-col-12 {  
-            width: column-width(12);   
-
-        }
-    }
-}
-@media #{$lg-desktop} {
-    body{
-        background-color: #ccc;
-        .lg-desktop-col-1{  
-            width: column-width(1);  
-
-        }
-        .lg-desktop-col-2{  
-            width: column-width(2);  
- 
-        }
-        .lg-desktop-col-3{  
-            width: column-width(3);   
-
-        }
-        .lg-desktop-col-4{  
-            width: column-width(4);   
-
-        }
-        .lg-desktop-col-5{  
-            width: column-width(5);   
-
-        }
-        .lg-desktop-col-6{  
-            width: column-width(6);   
-
-        }
-        .lg-desktop-col-7{  
-            width: column-width(7);   
-
-        }
-        .lg-desktop-col-8{  
-            width: column-width(8);   
-
-        }
-        .lg-desktop-col-9{  
-            width: column-width(9);   
-
-        }
-        .lg-desktop-col-10{  
-            width: column-width(10);  
- 
-        }
-        .lg-desktop-col-11{  
-            width: column-width(11);   
-
-        }
-        .lg-desktop-col-12{  
-            width: column-width(12);   
-
-        }
-    }
-}
-@media #{$xl-desktop} {
-    body{
-        background-color: #fff;
-        .xl-desktop-col-1 {  
-            width: column-width(1);  
-
-        }
-        .xl-desktop-col-2 {  
-            width: column-width(2);  
- 
-        }
-        .xl-desktop-col-3 {  
-            width: column-width(3);   
-
-        }
-        .xl-desktop-col-4 {  
-            width: column-width(4);   
-
-        }
-        .xl-desktop-col-5 {  
-            width: column-width(5);   
-
-        }
-        .xl-desktop-col-6 {  
-            width: column-width(6);   
-
-        }
-        .xl-desktop-col-7 {  
-            width: column-width(7);   
-
-        }
-        .xl-desktop-col-8 {  
-            width: column-width(8);   
-
-        }
-        .xl-desktop-col-9 {  
-            width: column-width(9);   
-
-        }
-        .xl-desktop-col-10 {  
-            width: column-width(10);  
- 
-        }
-        .xl-desktop-col-11 {  
-            width: column-width(11);   
-
-        }
-        .xl-desktop-col-12 {  
-            width: column-width(12);   
+        .md-col-12 {  
+            width: column-width(12);  
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+            float: left;   
 
         }
     }

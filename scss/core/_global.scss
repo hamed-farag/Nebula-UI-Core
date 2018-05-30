@@ -1,15 +1,26 @@
 html, body {
-  font-family: $system-font;
+  font-family: $main-font;
   font-size: 100%;
 }
 
 body {
-  background-color: #fff;
-  color:#505050;
+  background-color: #eaeaea;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
+div{box-sizing: border-box}
 img, svg { max-width: 100%; }
+
+/**********General Styles**********/
+.Marg0auto{margin: 0 auto}
+.DisplayBlock{display: block}
+.FL{float: left;}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}

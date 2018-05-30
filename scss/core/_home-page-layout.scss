@@ -1,0 +1,42 @@
+.page-content{padding: 1.25rem 0 2.5rem;}
+.sticky-left-cont{display: none;}
+.right-content{display: none;}
+.middle-content{width: 100%;}
+
+@media #{$sm} {
+    .page-content{
+        max-width: 40rem;
+        margin: 0 auto;      
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media #{$md}{
+    .right-content{
+        display: block;
+        height: 500px;
+    }
+    .page-content{
+        position: relative;
+        max-width: 67rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    .main-container{
+        position: relative;
+        padding-left: 14.5rem;
+    }
+    .sticky-left-cont{
+        display: block;
+        width: 14.5rem;
+        position: absolute;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+}
+@media #{$lg}{
+    .page-content{
+        max-width: 75rem;
+    }
+}
