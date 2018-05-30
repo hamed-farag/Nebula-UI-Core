@@ -13,13 +13,15 @@
     "gulp-mocha": "^6.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "kss": "^3.0.0-beta.20",
     "mocha": "^5.2.0",
     "sass-true": "^4.0.0"
   },
   "scripts": {
     "start": "gulp",
     "watch": "gulp --watch",
-    "test": "mocha"
+    "test": "mocha",
+    "styleguide": "node node_modules/kss/bin/kss --config kss-config.json"
   },
   "author": "",
   "license": "ISC"
