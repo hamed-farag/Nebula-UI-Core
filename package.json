@@ -14,6 +14,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "kss": "^3.0.0-beta.20",
+    "michelangelo": "^0.7.0",
     "mocha": "^5.2.0",
     "sass-true": "^4.0.0"
   },
@@ -21,7 +22,7 @@
     "start": "gulp",
     "watch": "gulp --watch",
     "test": "mocha",
-    "styleguide": "node node_modules/kss/bin/kss --config kss-config.json"
+    "styleguide": "node node_modules/kss/bin/kss --config config/kss/kss-config.json"
   },
   "author": "",
   "license": "ISC"
