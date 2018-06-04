@@ -1,0 +1,19 @@
+@media #{$sm} {
+    .groups-grid {margin: -0.625rem;height: 96px}
+    .groups-grid .group-card{padding: 0.625rem;width:50%;float: left;}
+}
+@media #{$md}{
+    .page-content{
+        position: relative;
+        max-width: 67rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    .groups-grid {margin: 0}
+    .groups-grid .group-card{padding: 0.625rem;width:33.3333333%;float: left;}
+}
+@media #{$lg}{
+    .page-content{
+        max-width: 75rem;
+    }
+}
