@@ -1,4 +1,5 @@
 @import '_fonts.scss';
+@import '_breakpoints.scss';
 html, body {
   font-family: $main-font;
   font-size: 100%;
@@ -22,9 +23,32 @@ img, svg { max-width: 100%; }
 .PosFixed{position: fixed}
 .Clear{clear: both;}
 .row{margin-left: -0.625rem;margin-right: -0.625rem;}
+.page-content{padding: 1.25rem 0 2.5rem;position: relative;}
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
   -webkit-box-shadow:$top $left $blur $color #{$inset};
   -moz-box-shadow:$top $left $blur $color #{$inset};
   box-shadow:$top $left $blur $color #{$inset};
+}
+
+@media #{$sm} {
+  .page-content{
+      max-width: 40rem;
+      margin: 0 auto;      
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+}
+@media #{$md}{
+  .page-content{
+      position: relative;
+      max-width: 67rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+  }
+}
+@media #{$lg}{
+  .page-content{
+      max-width: 75rem;
+  }
 }

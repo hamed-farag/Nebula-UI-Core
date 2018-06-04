@@ -1,6 +1,5 @@
 @import '../components/_grid-system.scss';
 
-.page-content{padding: 1.25rem 0 2.5rem;position: relative;}
 .sticky-left-cont{display: none;}
 .right-content{display: none;}
 .middle-content{width: 100%}
@@ -8,12 +7,6 @@
 .cover-photo{padding: 0!important;}
 
 @media #{$sm} {
-    .page-content{
-        max-width: 40rem;
-        margin: 0 auto;      
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
     .main-container{margin-left: -0.625rem;margin-right: -0.625rem;}
     .middle-content{padding: 0!important}
     .profile-left-cont{display: block!important;width: 36rem}
@@ -24,12 +17,6 @@
     .right-content{
         display: block;
         height: 500px;
-    }
-    .page-content{
-        position: relative;
-        max-width: 67rem;
-        padding-left: 1.4rem;
-        padding-right: 1.4rem;
     }
     .main-container{
         position: relative;
@@ -46,9 +33,4 @@
     }
     .cover-photo{padding: 0!important;}
     .profile-left-cont{top:20px}
-}
-@media #{$lg}{
-    .page-content{
-        max-width: 75rem;
-    }
 }
