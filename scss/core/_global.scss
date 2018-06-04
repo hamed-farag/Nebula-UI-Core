@@ -1,3 +1,4 @@
+@import '_fonts.scss';
 html, body {
   font-family: $main-font;
   font-size: 100%;
@@ -18,6 +19,9 @@ img, svg { max-width: 100%; }
 .Marg0auto{margin: 0 auto}
 .DisplayBlock{display: block}
 .FL{float: left;}
+.PosFixed{position: fixed}
+.Clear{clear: both;}
+.row{margin-left: -0.625rem;margin-right: -0.625rem;}
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
   -webkit-box-shadow:$top $left $blur $color #{$inset};
