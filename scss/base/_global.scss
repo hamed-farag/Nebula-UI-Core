@@ -1,5 +1,5 @@
-@import '_fonts.scss';
-@import '_breakpoints.scss';
+@import '../core/_fonts.scss';
+@import '../core/_breakpoints.scss';
 html, body {
   font-family: $main-font;
   font-size: 100%;

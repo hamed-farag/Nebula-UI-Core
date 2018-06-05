@@ -1,12 +1,12 @@
-@import 'core/_global.scss';
-@import 'core/_reset.scss';
+@import 'base/_global.scss';
+@import 'base/_reset.scss';
 @import 'core/_fonts.scss';
 @import 'core/_colors.scss';
 @import 'core/_breakpoints.scss';
 @import 'components/_grid-system.scss';
-@import 'components/_home-page-layout.scss';
-@import 'components/_people-layout.scss';
-@import 'components/groups-layout.scss';
+@import 'layout/_home-page-layout.scss';
+@import 'layout/_people-layout.scss';
+@import 'layout/groups-layout.scss';
 @import 'components/_buttons.scss';
 
 
