@@ -28,14 +28,21 @@ button:focus{outline: none}
     font-size: 0.75rem;
     color: $default-grey-color;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+    cursor: pointer;
     &:hover, &:focus{
         background-color: #f0f0f0;
         border-color: #929292;
-        cursor: pointer;
     }
     &:active{
         background-color: #e0e0e0;
         border-color: #929292;
+    }
+    &:disabled{
+        background-color: #ececec !important;
+        border-color: #ddd !important;
+        color: #989898 !important;
+        opacity: 1 !important;
+        cursor: default !important;
     }
 }
 .small-button{

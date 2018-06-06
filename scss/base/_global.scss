@@ -15,6 +15,7 @@ body {
 
 div{box-sizing: border-box}
 img, svg { max-width: 100%; }
+input:focus, label:focus{outline: none}
 
 /**********General Styles**********/
 .Marg0auto{margin: 0 auto}
