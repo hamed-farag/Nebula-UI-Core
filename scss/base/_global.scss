@@ -18,6 +18,7 @@ img, svg { max-width: 100%; }
 input:focus, label:focus{outline: none}
 
 /**********General Styles**********/
+.form-field:before, .form-field:after, .check-radio:before, .check-radio:after{content: " ";display: table;}
 .Marg0auto{margin: 0 auto}
 .DisplayBlock{display: block}
 .FL{float: left;}
