@@ -8,7 +8,7 @@ button:focus{outline: none}
     color: $white-color;
     padding: 0 1.375em;
     height: $button-height;
-    font-size: 12px;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s;
     &:hover, &:focus{
@@ -47,10 +47,12 @@ button:focus{outline: none}
 }
 .small-button{
     height: 1.625rem;
+    padding: 0 0.75rem;
+    line-height: 1;
 }
 
 .button-group .button{
-    display: inline-table;
+    float:left;
     border-left-width: 0;
     &:first-child{
         border-left-width: 1px;

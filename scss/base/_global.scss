@@ -22,6 +22,7 @@ input:focus, label:focus{outline: none}
 .Marg0auto{margin: 0 auto}
 .DisplayBlock{display: block}
 .FL{float: left;}
+.FR{float: right;}
 .PosFixed{position: fixed}
 .Clear{clear: both;}
 .row{margin-left: -0.625rem;margin-right: -0.625rem;}
@@ -35,6 +36,8 @@ input:focus, label:focus{outline: none}
 
 .page-content{padding: 1.25rem 0 2.5rem;position: relative;}
 .panel{@include box-shadow(0px, 0px, 3px, rgba(0,0,0,0.2)); }
+.icon-margin {
+  margin-right: 0.375em;}
 
 @media #{$sm} {
   .page-content{
