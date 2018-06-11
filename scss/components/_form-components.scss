@@ -14,7 +14,6 @@
     .form-control {
         font-size: 0.875rem;
         width: 100%;
-        height: 2.4375em;
         padding: 0.5em 0.75em;
         line-height: 1.3;
         background-color: #fff;
@@ -61,6 +60,40 @@
     }
     &:first-child{
         margin-top: 0;
+    }
+    .date-picker, .time-picker{
+        position: relative;
+        &:after, &:after{
+            width: 2.125rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: #2199ca;
+            font-family: 'FontAwesome';
+            text-align: center;
+            pointer-events: none;
+        }
+    }
+    .date-picker:after{
+        content: "\f073";
+    }
+    .date-picker input{
+        padding-left: 1.875rem;
+        cursor: pointer;
+    }
+    .time-picker:after{
+        content: "\f017";
+    }
+    .time-picker select{
+        padding-left: 1.5rem;
+        text-transform: uppercase;
+        padding-left: 0;
+        text-indent: 1.5rem;
+        line-height: 1.75rem;
     }
 }
 .search-bar{display: none}
