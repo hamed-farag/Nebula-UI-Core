@@ -1,18 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Basic sass template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Basic Sass Boilerplate" />
-	  <link href="dist/app.css" rel="stylesheet" />
+	<title>Basic sass template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="title" content="Basic Sass Boilerplate" />
+	<link href="dist/app.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<div id="example">
-  <h1>Hello world!</h1>
-</div>
+	<!--Home Page Layout-->
+	<div class="page-content">
+		<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Home page Layout</h2>
+		<div class="sticky-left-cont">
+			<div style="background: white;height: 500px;"></div>
+		</div>
+		<div class="main-container">
+			<div class="middle-content sm-col-12 md-col-7">
+				<div style="background: white;height: 500px;"></div>
+			</div>
+			<div class="right-content sm-col-5">
+				<div style="background: white;height: 500px;"></div>
+			</div>
+		</div>
+		<div class="Clear"></div>
+	</div>
+
+
+	<!--People Page Layout-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">People page Layout</h2>
+	<div class="page-content">
+		<div class="people-grid">
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+			<div class="person-card">
+				<div class="panel" style="background: white; height: 220px;margin-bottom: 20px"></div>
+			</div>
+		</div>
+		<div class="Clear"></div>
+	</div>
+
+
+	<!--Profile Page Layout-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Profile page Layout</h2>
+	<div class="page-content">
+		<div class="sticky-left-cont profile-left-cont">
+			<div style="background: #ccc;height: 300px;"></div>
+		</div>
+		<div class="main-container">
+			<div class="cover-photo sm-col-12 md-col-12">
+				<div style="background: white;height: 200px; margin-bottom: 20px"></div>
+			</div>
+			<div class="Clear"></div>
+			<div class="middle-content sm-col-12 md-col-7">
+				<div style="background: white;height: 500px;"></div>
+			</div>
+			<div class="right-content sm-col-5">
+				<div style="background: white;height: 500px;"></div>
+			</div>
+		</div>
+		<div class="Clear"></div>
+	</div>
+
+
+	<!--Groups Page Layout-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Groups page Layout</h2>
+	<div class="page-content">
+		<div class="groups-grid">
+			<div class="group-card">
+				<div style="background: white; height: 96px;margin-bottom: 20px"></div>
+			</div>
+			<div class="group-card">
+				<div style="background: white; height: 96px;margin-bottom: 20px"></div>
+			</div>
+			<div class="group-card">
+				<div style="background: white; height: 96px;margin-bottom: 20px"></div>
+			</div>
+			<div class="group-card">
+				<div style="background: white; height: 96px;margin-bottom: 20px"></div>
+			</div>
+		</div>
+		<div class="Clear"></div>
+	</div>
+
+	<!--Form Components-->
+	<div class="page-content">
+		<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Form Components</h2>
+		<div class="sticky-left-cont">
+			<div class="panel" style="background: white;height: 250px;"></div>
+		</div>
+		<div class="main-container">
+			<div class="middle-content sm-col-12 md-col-12">
+				<form>
+					<div class="panel Padd20" style="background: #fff">
+						<div class="form-field">
+							<label class="form-label">First Name</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="Clear"></div>
+						<div class="form-field">
+							<label class="form-label">Last Name</label>
+							<input type="text" class="form-control" disabled>
+						</div>
+						<div class="form-field">
+							<label class="form-label">Message</label>
+							<textarea class="form-control" rows="3"></textarea>
+						</div>
+						<div class="Clear"></div>
+						<div class="form-field">
+							<label class="form-label">Date</label>
+							<div class="date-picker">
+								<input type="text" class="form-control" readonly="readonly">
+							</div>
+						</div>
+						<div class="form-field">
+							<label class="form-label">Time</label>
+							<div class="time-picker">
+								<select class="form-control">
+									<option>01:30am</option>
+									<option>02:30am</option>
+								</select>
+							</div>
+						</div>
+						<div class="Clear"></div>
+						<div class="form-field">
+							<label class="form-label">Gender</label>
+							<div>
+								<div class="radio-field">
+									<input type="radio" id="male" name="gender">
+									<label for="male">Male</label>
+								</div>
+								<div class="radio-field">
+									<input type="radio" id="female" name="gender">
+									<label for="female">Female</label>
+								</div>
+							</div>
+						</div>
+						<div class="Clear"></div>
+						<div class="form-field">
+							<label class="form-label">Interests</label>
+							<div>
+								<div class="radio-field">
+									<input type="checkbox" id="reading">
+									<label for="reading">Reading</label>
+								</div>
+								<div class="radio-field">
+									<input type="checkbox" id="running">
+									<label for="running">Running</label>
+								</div>
+							</div>
+						</div>
+						<div class="Clear"></div>
+						<div class="form-field">
+							<label class="form-label">Language</label>
+							<select class="form-control">
+								<option>English</option>
+								<option>Arabic</option>
+							</select>
+						</div>
+						<div class="Clear"></div>
+						<!--Buttons-->
+						<button class="button primary-button FR" style="margin-top: 20px">Post</button>
+						<button class="button primary-button FR small-button" style="margin-top: 20px;margin-right: 10px">
+							<i class="fa fa-rss icon-margin"></i>Follow</button>
+						<button class="button default-button FR small-button" style="margin-top: 20px;margin-right: 10px">Edit</button>
+						<button class="button default-button FR small-button" style="margin-top: 20px;margin-right: 10px" disabled="disabled">Invite</button>
+						<div class="button-group FR" style="margin-top: 20px;margin-right: 10px">
+							<button class="button default-button small-button">
+								<i class="fa fa-pencil icon-margin"></i>Post</button>
+							<button class="button default-button small-button">
+								<i class="fa fa-envelope icon-margin"></i>Message</button>
+						</div>
+						<div class="Clear"></div>
+					</div>
+				</form>
+			</div>
+			<div class="Clear"></div>
+		</div>
+		<div class="Clear"></div>
+		<!--Search Bar-->
+		<div class="search-bar" style="margin-top: 20px">
+			<input type="search" class="form-control search-control" placeholder="Search ITWORX HUB...">
+			<input type="submit" value="">
+		</div>
+	</div>
+
+
+
+
 
 </body>
+
 </html>

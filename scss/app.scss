@@ -1,23 +1,10 @@
-// External libs
-@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
-
-// Functions
-@import 'functions/rem-calc';
-
-// Core
-@import 'core/reset';
-@import 'core/accessibility';
-@import 'core/breakpoints';
-@import 'core/colors';
-@import 'core/fonts';
-@import 'core/global';
-@import 'core/page-layout';
-@import 'core/typography';
-
-// Components
-@import 'components/buttons';
-@import 'components/lists';
-@import 'components/tabs';
-
-// Templates
-@import 'templates/example';
+@import 'vendors/reset';
+@import 'base/global';
+@import 'base/typography';
+@import 'abstracts/variables';
+@import 'base/breakpoints';
+@import 'layout/grid';
+@import 'layout/home-page-layout';
+@import 'layout/people-layout';
+@import 'layout/groups-layout';
+@import 'components/index';

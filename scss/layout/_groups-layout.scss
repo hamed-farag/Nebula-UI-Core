@@ -1,0 +1,23 @@
+@import '../base/breakpoints';
+@media #{$sm} {
+    .groups-grid {
+        margin: -0.625rem;
+        height: 96px
+    }
+    .groups-grid .group-card {
+        padding: 0.625rem;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media #{$md} {
+    .groups-grid {
+        margin: 0
+    }
+    .groups-grid .group-card {
+        padding: 0.625rem;
+        width: 33.3333333%;
+        float: left;
+    }
+}

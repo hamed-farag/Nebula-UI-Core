@@ -1,0 +1,66 @@
+$button-height: 2.4375em;
+$small-button-height: 1.625rem;
+button:focus {
+    outline: none
+}
+
+.primary-button {
+    background-color: $primary-color;
+    border: solid 1px $primary-color;
+    color: $white-color;
+    padding: 0 1.375em;
+    height: $button-height;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+    &:hover,
+    &:focus {
+        border-color: $button-hover-color;
+        background-color: $button-hover-color;
+    }
+    &:active {
+        border-color: $button-active-color;
+        background-color: $button-active-color;
+    }
+}
+
+.default-button {
+    background-color: #f6f6f6;
+    border: solid 1px #b2b2b2;
+    padding: 0 0.75rem;
+    line-height: 1;
+    font-size: 0.75rem;
+    color: $default-grey-color;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: #f0f0f0;
+        border-color: #929292;
+    }
+    &:active {
+        background-color: #e0e0e0;
+        border-color: #929292;
+    }
+    &:disabled {
+        background-color: #ececec !important;
+        border-color: #ddd !important;
+        color: #989898 !important;
+        opacity: 1 !important;
+        cursor: default !important;
+    }
+}
+
+.small-button {
+    height: 1.625rem;
+    padding: 0 0.75rem;
+    line-height: 1;
+}
+
+.button-group .button {
+    float: left;
+    border-left-width: 0;
+    &:first-child {
+        border-left-width: 1px;
+    }
+}

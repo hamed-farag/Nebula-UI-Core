@@ -1,0 +1,22 @@
+@import '../base/breakpoints';
+@media #{$sm} {
+    .people-grid {
+        margin: -0.625rem
+    }
+    .people-grid .person-card {
+        padding: 0.625rem;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media #{$md} {
+    .people-grid {
+        margin: 0
+    }
+    .people-grid .person-card {
+        padding: 0.625rem;
+        width: 20%;
+        float: left;
+    }
+}

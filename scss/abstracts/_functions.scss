@@ -1,0 +1,8 @@
+@function column-width($col, $total:12) {
+	@return percentage($col/$total);
+}
+
+@function rem-calc($size) {
+	$remSize: $size / 16;
+	@return #{$remSize}rem;
+}
