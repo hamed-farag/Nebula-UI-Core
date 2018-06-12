@@ -1,0 +1,29 @@
+.form-field {
+    .form-control {
+        font-size: 0.875rem;
+        width: 100%;
+        padding: 0.5em 0.75em;
+        line-height: 1.3;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        box-sizing: border-box;
+        color: $default-grey-color;
+        &:focus {
+            background-color: #f8f8f8;
+            outline: none;
+        }
+        &:hover,
+        &:focus {
+            border-color: #aaa;
+        }
+        &[disabled] {
+            color: #888;
+            background-color: #EAEAEA;
+            border-color: #DDD;
+        }
+    }
+}

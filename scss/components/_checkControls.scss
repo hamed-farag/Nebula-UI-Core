@@ -1,0 +1,23 @@
+.form-field {
+    .radio-field {
+        margin-top: 0.3125em;
+        input[type="radio"] {
+            margin-left: -0.1rem;
+            vertical-align: middle;
+            margin-top: 0px;
+        }
+        input[type="checkbox"] {
+            margin-left: -0.1rem;
+            vertical-align: middle;
+            margin-top: 0px;
+        }
+        label {
+            color: $default-grey-color;
+            margin-bottom: 6px;
+            padding-top: 1px;
+            line-height: 20px;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+    }
+}
