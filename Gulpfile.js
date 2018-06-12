@@ -51,12 +51,3 @@ gulp.task('prod', function () {
 		.pipe(rename("/prod/nebula-ui-" + pkg.version + ".min.css"))
 		.pipe(gulp.dest(output));
 });
-
-gulp.task('test', function () {
-	return gulp.src(['test/*.test.js'], {
-			read: false
-		})
-		.pipe(mocha({
-			reporter: 'spec'
-		}));
-});
