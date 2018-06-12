@@ -1,0 +1,11 @@
+@import "../node_modules/sass-true/sass/true";
+@import '../scss/functions/rem-calc';
+@include report;
+
+@include test-module('ٌrem Calculation') {
+    @include test('Try to convert 320px') {
+        $actual: rem-calc(320);
+        $expected: "20rem"; // based on base 16px and ratio 1.4
+        @include assert-equal($actual, $expected);
+    }
+}
