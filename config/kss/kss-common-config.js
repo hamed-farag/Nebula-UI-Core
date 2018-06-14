@@ -1,8 +1,7 @@
-{
+module.exports = {
     "title": "Nebula-UI Style Guide",
     "builder": "../../node_modules/michelangelo/kss_styleguide/custom-template",
     "source": ["../../scss"],
-    "destination": "../../docs/",
     "homepage": "../config/kss/templates/homepage.md",
     "css": ["../dist/app.css"]
 }

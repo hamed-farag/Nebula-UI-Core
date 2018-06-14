@@ -1,9 +1,11 @@
-var gulp = require('gulp');
+var gulp = require('gulp-param')(require('gulp'), process.argv);
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var rename = require("gulp-rename");
+var bump = require('gulp-bump');
+var run = require('gulp-run');
 
 var pkg = require("./package.json");
 
@@ -41,13 +43,24 @@ gulp.task('sass', function () {
 		.pipe(browserSync.stream());
 });
 
+gulp.task('semver', function (stage) {
+	gulp.src('./package.json')
+		.pipe(bump({
+			type: stage || 'major' // patch | minor | major | prerelease
+		}))
+		.pipe(gulp.dest('./'));
+});
+
 gulp.task('prod', function () {
-	return gulp
-		.src(input)
+	return gulp.src(input)
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}))
 		.pipe(autoprefixer(autoprefixerOptions))
-		.pipe(rename("/prod/nebula-ui-" + pkg.version + ".min.css"))
-		.pipe(gulp.dest(output));
+		.pipe(rename("/nebula-ui.min.css"))
+		.pipe(gulp.dest(output + '/prod/' + pkg.version));
 });
+
+gulp.task('styleguide', function (cb) {
+	return run('npm run styleguide:prod').exec();
+})
