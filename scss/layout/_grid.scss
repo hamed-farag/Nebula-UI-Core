@@ -18,6 +18,12 @@
                 width: 100% / $grid-columns * $i;
                 @extend %grid-system-styles-sm; 
             }
+            .push-sm-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-sm-#{$i} {
+                right: 100% / $grid-columns * $i;
+            }
         }
     }
 }
@@ -33,6 +39,12 @@
             .md-col-#{$i} { 
                 width: 100% / $grid-columns * $i;
                 @extend %grid-system-styles-md; 
+            }
+            .push-md-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-md-#{$i} {
+                right: 100% / $grid-columns * $i;
             }
         }
     }
@@ -50,10 +62,12 @@
                 width: 100% / $grid-columns * $i;
                 @extend %grid-system-styles-lg; 
             }
+            .push-lg-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-lg-#{$i} {
+                right: 100% / $grid-columns * $i;
+            }
         }
     }
-}
-
-.push-10 {
-    left: calc(100% / 12 * 10);
 }
