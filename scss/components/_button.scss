@@ -1,9 +1,11 @@
 $button-height: 2.4375em;
 $small-button-height: 1.625rem;
-button:focus {
-    outline: none
+button{
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+    &:hover, &:focus {
+        outline: none;
+    }
 }
-
 .primary-button {
     background-color: $primary-color;
     border: solid 1px $primary-color;
@@ -27,8 +29,9 @@ button:focus {
 .default-button {
     background-color: #f6f6f6;
     border: solid 1px #b2b2b2;
-    padding: 0 0.75rem;
+    padding: 0 1.375em;
     line-height: 1;
+    height: $button-height;
     font-size: 0.75rem;
     color: $default-grey-color;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s;
@@ -63,4 +66,10 @@ button:focus {
     &:first-child {
         border-left-width: 1px;
     }
+}
+.button.button-link, .button.button-link[type], .button.button-link:hover, .button.button-link:focus, .button.button-icon, .button.button-icon[type], .button.button-icon:hover, .button.button-icon:focus {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
