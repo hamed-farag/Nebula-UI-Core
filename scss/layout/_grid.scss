@@ -24,6 +24,9 @@
             .pull-sm-#{$i} {
                 right: 100% / $grid-columns * $i;
             }
+            .offset-sm-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
         }
     }
 }
@@ -46,6 +49,9 @@
             .pull-md-#{$i} {
                 right: 100% / $grid-columns * $i;
             }
+            .offset-md-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
         }
     }
 }
@@ -67,6 +73,9 @@
             }
             .pull-lg-#{$i} {
                 right: 100% / $grid-columns * $i;
+            }
+            .offset-lg-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
             }
         }
     }
