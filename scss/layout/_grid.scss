@@ -1,22 +1,21 @@
 @import '../base/breakpoints';
 @import '../abstracts/variables';
-
 .row {
-	margin-left: -0.625rem;
-	margin-right: -0.625rem;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
 }
 
-@media #{$sm} {
-    body{
-        %grid-system-styles-sm {
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            float: left;
-        }
+body {
+    @mixin grid-system-styles() {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        float: left;
+    }
+    @media #{$sm} {
         @for $i from 1 through $grid-columns {
-            .sm-col-#{$i} { 
+            .sm-col-#{$i} {
                 width: 100% / $grid-columns * $i;
-                @extend %grid-system-styles-sm; 
+                @include grid-system-styles();
             }
             .push-sm-#{$i} {
                 left: 100% / $grid-columns * $i;
@@ -29,19 +28,11 @@
             }
         }
     }
-}
-
-@media #{$md} {
-    body{
-        %grid-system-styles-md {
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            float: left;
-        }
+    @media #{$md} {
         @for $i from 1 through $grid-columns {
-            .md-col-#{$i} { 
+            .md-col-#{$i} {
                 width: 100% / $grid-columns * $i;
-                @extend %grid-system-styles-md; 
+                @include grid-system-styles();
             }
             .push-md-#{$i} {
                 left: 100% / $grid-columns * $i;
@@ -54,19 +45,11 @@
             }
         }
     }
-}
-
-@media #{$lg} {
-    body{
-        %grid-system-styles-lg {
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            float: left;
-        }
+    @media #{$lg} {
         @for $i from 1 through $grid-columns {
-            .lg-col-#{$i} { 
+            .lg-col-#{$i} {
                 width: 100% / $grid-columns * $i;
-                @extend %grid-system-styles-lg; 
+                @include grid-system-styles();
             }
             .push-lg-#{$i} {
                 left: 100% / $grid-columns * $i;
