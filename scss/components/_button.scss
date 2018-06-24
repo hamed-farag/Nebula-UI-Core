@@ -60,3 +60,9 @@ button{
         }
     }
 }
+.button.button-link, .button.button-link[type], .button.button-link:hover, .button.button-link:focus, .button.button-icon, .button.button-icon[type], .button.button-icon:hover, .button.button-icon:focus {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

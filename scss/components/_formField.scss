@@ -1,4 +1,9 @@
 @import '../base/breakpoints';
+form{
+    .panel{
+        padding: 1.25rem;
+    }
+}
 .form-field {
     margin-top: 1.25rem;
     &:first-child {
@@ -13,6 +18,7 @@
         display: inline-block;
         font-size: 0.875rem;
         color: $default-grey-color;
+        font-weight: bold;
     }
 }
 
