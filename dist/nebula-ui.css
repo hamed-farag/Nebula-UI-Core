@@ -936,7 +936,7 @@ form .panel {
   }
 }
 
-button {
+.button {
   font-size: 0.75rem;
   -webkit-transition: color 0.15s, background-color 0.15s, border-color 0.15s;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s;
@@ -947,11 +947,11 @@ button {
   padding: 0 1.375em;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
-button:disabled {
+.button:disabled {
   background-color: #ececec !important;
   border-color: #ddd !important;
   color: #989898 !important;
@@ -959,39 +959,39 @@ button:disabled {
   cursor: default !important;
 }
 
-button.primary-button {
+.button.primary-button {
   background-color: #2199CA;
   border: solid 1px #2199CA;
   color: #fff;
 }
 
-button.primary-button:hover, button.primary-button:focus {
+.button.primary-button:hover, .button.primary-button:focus {
   border-color: #1278a2;
   background-color: #1278a2;
 }
 
-button.primary-button:active {
+.button.primary-button:active {
   border-color: #0f5b7b;
   background-color: #0f5b7b;
 }
 
-button.default-button {
+.button.default-button {
   background-color: #f6f6f6;
   border: solid 1px #b2b2b2;
   color: #5A5A5A;
 }
 
-button.default-button:hover, button.default-button:focus {
+.button.default-button:hover, .button.default-button:focus {
   background-color: #f0f0f0;
   border-color: #929292;
 }
 
-button.default-button:active {
+.button.default-button:active {
   background-color: #e0e0e0;
   border-color: #929292;
 }
 
-button.small-button {
+.button.small-button {
   height: 1.625rem;
   padding: 0 0.75rem;
   line-height: 1;
@@ -1011,6 +1011,65 @@ button.small-button {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown.dropdown-open > .dropdown-content {
+  display: block;
+}
+
+.dropdown.small > .dropdown-content {
+  width: auto;
+  min-width: 9rem;
+  white-space: nowrap;
+}
+
+.dropdown .dropdown-trigger {
+  display: block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  font-size: 0.75rem;
+  z-index: 3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 12rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #ddd;
+  margin: 0;
+  padding: 0.375em 0;
+}
+
+.dropdown .dropdown-content li {
+  width: 100%;
+}
+
+.dropdown .dropdown-content li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  color: #5A5A5A;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dropdown .dropdown-content li a i {
+  font-size: 1.25em;
+  width: 1.25em;
+  margin-top: 0;
+}
+
+.dropdown .dropdown-content li a:hover, .dropdown .dropdown-content li a:focus {
+  background-color: #f6f6f6;
 }
 
 .form-field .radio-field {
@@ -1532,6 +1591,11 @@ textarea {
 
 .create-post ul li button.active:focus {
   background-color: #1278a2;
+}
+
+.create-post ul li button .dropdown-content {
+  margin: 0;
+  margin-left: -1px;
 }
 
 /*# sourceMappingURL=nebula-ui.css.map */
