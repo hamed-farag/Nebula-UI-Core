@@ -220,9 +220,33 @@
 		</div>
 		<div class="main-container">
 			<div class="middle-content sm-col-12 md-col-7">
+				<div class="panel card full-width create-post">
+					<div class="panel-header PaddZero">
+						<ul>
+							<li><button class="active"><i class="fa fa-pencil"></i></button></li>
+							<li><button><i class="fa fa-camera"></i></button></li>
+							<li><button><i class="fa fa-paperclip"></i></button></li>
+							<li><button><i class="fa fa-list-ul"></i></button></li>
+							<li>
+								<div class="dropdown dropdown-open">
+									<button class="dropdown-trigger"><i class="fa fa-ellipsis-v"></i></button>
+									<ul class="dropdown-content" style="display:none">
+										<li><a href="#" data-fi-modal="#CreateEvent"><i class="fa fa-calendar"></i> <span>Create Event</span></a></li>
+										<li><a href="#"><i class="fa fa-newspaper-o"></i> <span>Create Article</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="Clear"></div>
+					</div>
+					<div class="panel-footer">
+						<button class="button primary-button FR">Post</button>
+						<div class="Clear"></div>
+					</div>
+				</div>
 				<div class="panel card post full-width">
 					<div class="post-info">Sponsored Post</div>
-					<div class="panel-header">
+					<div class="post-header">
 						<a class="blurb-img">
 							<div class="initials">CC</div>
 						</a>
@@ -240,8 +264,8 @@
 						<span class="FL offer-expiry">
 							<i class="fa fa-clock-o icon-margin"></i><span>Expires in 4 weeks</span>
 						</span>
-						<button class="button default-button FR"><i class="fa fa-bookmark-o icon-margin"></i>Unsave Post</button>
-						<button class="button default-button FR"><i class="fa fa-bookmark icon-margin"></i>Save Post</button>
+						<button class="button default-button small-button FR"><i class="fa fa-bookmark-o icon-margin"></i>Unsave Post</button>
+						<button class="button default-button small-button FR"><i class="fa fa-bookmark icon-margin"></i>Save Post</button>
 						<div class="Clear"></div>
 					</div>
 					<div class="Clear"></div>
@@ -349,7 +373,7 @@
 																	<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
 																</div>
 																<div class="add-comment-button">
-																	<input type="submit" class="button default-button" disabled="disabled" value="Post">
+																	<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
 																</div>
 															</div>
 														</div>
@@ -403,7 +427,7 @@
 											<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
 										</div>
 										<div class="add-comment-button">
-											<input type="submit" class="button default-button" disabled="disabled" value="Post">
+											<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
 										</div>
 									</div>
 								</div>

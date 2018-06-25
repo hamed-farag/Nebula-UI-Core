@@ -1,6 +1,9 @@
 .post{
     margin-bottom: 1.25rem;
     position: relative;
+    * + &{
+        margin-top: 1.25rem;
+    }
     .post-info {
         margin-bottom: 0.75rem;
         padding-bottom: 0.5rem;
@@ -37,7 +40,8 @@
             margin-top: 1rem;
         }
     }
-    .panel-header{
+    .post-header{
+		font-size: 1em;
         .blurb-content{
             .date-label{
                 margin-top: 0.25rem;

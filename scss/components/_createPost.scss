@@ -1,0 +1,32 @@
+.create-post{
+    ul{
+        li{
+            float: left;
+            margin: 0;
+            button{
+                padding: 0;
+                width: 2.5rem;
+                height: 2.25rem;
+                text-align: center;
+                color: #a1a1a1;
+                border:none;
+                background-color: #fff;
+                line-height: 1;
+                cursor: pointer;
+                border-right: solid 1px #ddd;
+                font-size: 0.875rem;
+                &:hover, &:focus{
+                    background-color: #f6f6f6;
+                    color: #2199ca;
+                }
+                &.active{
+                    background-color: #2199ca;
+                    color: #fff;
+                    &:focus{
+                        background-color: #1278a2;
+                    }
+                }
+            }
+        }
+    }
+}
