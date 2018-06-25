@@ -102,6 +102,10 @@ a{
 	clear: both;
 }
 
+.PaddZero{
+	padding: 0!important;
+}
+
 .full-width{
 	width: 100%;
 }
@@ -120,7 +124,10 @@ a{
     font-size: 0.875rem;
     padding: 0.75rem;
     .panel-header{
-		font-size: 1em;
+		background-color: #f6f6f6;
+		border-bottom:solid 1px #ddd;
+		margin: -0.75rem -0.75rem 0.75rem;
+		padding: 0.625rem 0.75rem;
 	}
     .panel-footer{
         background-color: #f6f6f6;
