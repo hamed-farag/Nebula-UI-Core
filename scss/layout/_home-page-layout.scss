@@ -19,7 +19,7 @@
 }
 
 .cover-photo {
-    padding: 0 !important;
+    padding: 0;
 }
 
 @media #{$sm} {
@@ -28,14 +28,14 @@
         margin-right: -0.625rem;
     }
     .middle-content {
-        padding: 0 !important
+        padding: 0
     }
     .profile-left-cont {
-        display: block !important;
+        display: block;
         width: 36rem
     }
     .cover-photo {
-        padding: 0 !important;
+        padding: 0;
     }
 }
 
@@ -58,7 +58,7 @@
         padding-right: 0.625rem;
     }
     .cover-photo {
-        padding: 0 !important;
+        padding: 0;
     }
     .profile-left-cont {
         top: 20px
