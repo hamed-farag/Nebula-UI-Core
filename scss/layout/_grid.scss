@@ -7,207 +7,67 @@
 // Styleguide: Layout.GridSystem
 
 @import '../base/breakpoints';
-@import '../abstracts/functions';
-
-@media #{$sm} {
-    %grid-system-styles {
-        padding-left: 0.625rem;
-        padding-right: 0.625rem;
-        float: left;
-      }
-    body{
-        /**********sm Grid System**********/
-        .sm-col-1{  
-            width: column-width(1);  
-            @extend %grid-system-styles;
-        }
-        .sm-col-2{  
-            width: column-width(2);  
-            @extend %grid-system-styles;
-        }
-        .sm-col-3{  
-            width: column-width(3);
-            @extend %grid-system-styles;
-        }
-        .sm-col-4{  
-            width: column-width(4); 
-            @extend %grid-system-styles;
-        }
-        .sm-col-5{  
-            width: column-width(5);  
-            @extend %grid-system-styles;
-        }
-        .sm-col-6{  
-            width: column-width(6); 
-            @extend %grid-system-styles;
-        }
-        .sm-col-7{  
-            width: column-width(7); 
-            @extend %grid-system-styles;
-        }
-        .sm-col-8{  
-            width: column-width(8);
-            @extend %grid-system-styles;
-        }
-        .sm-col-9{  
-            width: column-width(9); 
-            @extend %grid-system-styles;
-        }
-        .sm-col-10{  
-            width: column-width(10); 
-            @extend %grid-system-styles;
-
-        }
-        .sm-col-11{  
-            width: column-width(11);   
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            float: left;  
-        }
-        .sm-col-12{  
-            width: column-width(12);   
-            padding-left: 0.625rem!important;
-            padding-right: 0.625rem!important;
-            float: left;  
-
-        }
-
-    }
-  }
-@media #{$md} {
-    %grid-system-styles-md {
-        padding-left: 0.625rem;
-        padding-right: 0.625rem;
-        float: left;
-      }
-  body{
-      .md-col-1{  
-        width: column-width(1);  
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-2{  
-        width: column-width(2);
-        @extend %grid-system-styles-md; 
- 
-    }
-    .md-col-3{  
-        width: column-width(3);   
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-4{  
-        width: column-width(4);
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-5{  
-        width: column-width(5); 
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-6{  
-        width: column-width(6); 
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-7{  
-        width: column-width(7);
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-8{  
-        width: column-width(8);  
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-9{  
-        width: column-width(9);   
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-10{  
-        width: column-width(10);  
-        @extend %grid-system-styles-md; 
- 
-    }
-    .md-col-11{  
-        width: column-width(11);   
-        @extend %grid-system-styles-md; 
-
-    }
-    .md-col-12{  
-        width: column-width(12);  
-        @extend %grid-system-styles-md; 
-    }
-  }
+@import '../abstracts/variables';
+.row {
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
 }
-@media #{$lg} {
-    %grid-system-styles-lg {
+
+body {
+    @mixin grid-system-styles() {
         padding-left: 0.625rem;
         padding-right: 0.625rem;
         float: left;
-      }
-    body{
-        .lg-col-1 {  
-            width: column-width(1); 
-            @extend %grid-system-styles-lg;
-
+    }
+    @media #{$sm} {
+        @for $i from 1 through $grid-columns {
+            .sm-col-#{$i} {
+                width: 100% / $grid-columns * $i;
+                @include grid-system-styles();
+            }
+            .push-sm-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-sm-#{$i} {
+                right: 100% / $grid-columns * $i;
+            }
+            .offset-sm-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
         }
-        .lg-col-2 {  
-            width: column-width(2);  
-            @extend %grid-system-styles-lg;
- 
+    }
+    @media #{$md} {
+        @for $i from 1 through $grid-columns {
+            .md-col-#{$i} {
+                width: 100% / $grid-columns * $i;
+                @include grid-system-styles();
+            }
+            .push-md-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-md-#{$i} {
+                right: 100% / $grid-columns * $i;
+            }
+            .offset-md-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
         }
-        .lg-col-3 {  
-            width: column-width(3);  
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-4 {  
-            width: column-width(4);  
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-5 {  
-            width: column-width(5);   
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-6 {  
-            width: column-width(6);  
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-7 {  
-            width: column-width(7);  
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-8 {  
-            width: column-width(8); 
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-9 {  
-            width: column-width(9);  
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-10 {  
-            width: column-width(10);  
-            @extend %grid-system-styles-lg;
- 
-        }
-        .lg-col-11 {  
-            width: column-width(11); 
-            @extend %grid-system-styles-lg;
-
-        }
-        .lg-col-12 {  
-            width: column-width(12);  
-            @extend %grid-system-styles-lg;
-
+    }
+    @media #{$lg} {
+        @for $i from 1 through $grid-columns {
+            .lg-col-#{$i} {
+                width: 100% / $grid-columns * $i;
+                @include grid-system-styles();
+            }
+            .push-lg-#{$i} {
+                left: 100% / $grid-columns * $i;
+            }
+            .pull-lg-#{$i} {
+                right: 100% / $grid-columns * $i;
+            }
+            .offset-lg-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
         }
     }
 }

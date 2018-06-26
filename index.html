@@ -108,8 +108,8 @@
 	</div>
 
 	<!--Form Components-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Form Components</h2>
 	<div class="page-content">
-		<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Form Components</h2>
 		<div class="sticky-left-cont">
 			<div class="panel" style="background: white;height: 250px;"></div>
 		</div>
@@ -184,12 +184,14 @@
 						</div>
 						<div class="Clear"></div>
 						<!--Buttons-->
-						<button class="button primary-button FR" style="margin-top: 20px">Post</button>
-						<button class="button primary-button FR small-button" style="margin-top: 20px;margin-right: 10px">
+						<button class="button primary-button" style="margin-top: 20px">Post</button>
+						<button class="button primary-button" style="margin-top: 20px" disabled>Post</button>
+						<button class="button default-button" style="margin-top: 20px">Post</button>
+						<button class="button primary-button  small-button" style="margin-top: 20px">
 							<i class="fa fa-rss icon-margin"></i>Follow</button>
-						<button class="button default-button FR small-button" style="margin-top: 20px;margin-right: 10px">Edit</button>
-						<button class="button default-button FR small-button" style="margin-top: 20px;margin-right: 10px" disabled="disabled">Invite</button>
-						<div class="button-group FR" style="margin-top: 20px;margin-right: 10px">
+						<button class="button default-button small-button" style="margin-top: 20px">Edit</button>
+						<button class="button default-button small-button" style="margin-top: 20px" disabled="disabled">Invite</button>
+						<div class="button-group" style="margin-top: 20px">
 							<button class="button default-button small-button">
 								<i class="fa fa-pencil icon-margin"></i>Post</button>
 							<button class="button default-button small-button">
@@ -210,9 +212,236 @@
 	</div>
 
 
-
-
+	<!--Post Card-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Post Card</h2>
+	<div class="page-content">
+		<div class="sticky-left-cont">
+			<div class="panel card" style="background: white;height: 500px;"></div>
+		</div>
+		<div class="main-container">
+			<div class="middle-content sm-col-12 md-col-7">
+				<div class="panel card full-width create-post">
+					<div class="panel-header PaddZero">
+						<ul>
+							<li><button class="active"><i class="fa fa-pencil"></i></button></li>
+							<li><button><i class="fa fa-camera"></i></button></li>
+							<li><button><i class="fa fa-paperclip"></i></button></li>
+							<li><button><i class="fa fa-list-ul"></i></button></li>
+							<li>
+								<div class="dropdown dropdown-open">
+									<button class="dropdown-trigger"><i class="fa fa-ellipsis-v"></i></button>
+									<ul class="dropdown-content" style="display:none">
+										<li><a href="#" data-fi-modal="#CreateEvent"><i class="fa fa-calendar"></i> <span>Create Event</span></a></li>
+										<li><a href="#"><i class="fa fa-newspaper-o"></i> <span>Create Article</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="Clear"></div>
+					</div>
+					<div class="panel-footer">
+						<button class="button primary-button FR">Post</button>
+						<div class="Clear"></div>
+					</div>
+				</div>
+				<div class="panel card post full-width">
+					<div class="post-info">Sponsored Post</div>
+					<div class="post-header">
+						<a class="blurb-img">
+							<div class="initials">CC</div>
+						</a>
+						<div class="blurb-content">
+							<h5>
+								<a href="#" class="Bold">Corporate Communications </a>
+								<span class="destination"><i class="fa fa-chevron-right"></i><a href="#" class="Bold">HUB Team </a></span>
+								<span class="light-grey">posted an offer.</span>
+							</h5>
+							<label class="date-label light-grey">Thursday at 8:37pm</label>
+						</div>
+					</div>
+					<div class="Clear"></div>
+					<div class="offer-actions">
+						<span class="FL offer-expiry">
+							<i class="fa fa-clock-o icon-margin"></i><span>Expires in 4 weeks</span>
+						</span>
+						<button class="button default-button small-button FR"><i class="fa fa-bookmark-o icon-margin"></i>Unsave Post</button>
+						<button class="button default-button small-button FR"><i class="fa fa-bookmark icon-margin"></i>Save Post</button>
+						<div class="Clear"></div>
+					</div>
+					<div class="Clear"></div>
+					<div class="post-action-counts">
+						<div class="FL">
+							<a href="#" class="post-action-count reactions-count">
+								<div class="reactions-icons">
+									<i class="reaction-icon fa fa-heart"></i>
+									<i class="reaction-icon fa fa-thumbs-up"></i>
+								</div>
+								<label>36</label>
+							</a>
+						</div>
+						<div class="FR">
+							<a href="#" class="post-action-count seen-count">Seen by 18</a>
+						</div>
+						<div class="Clear"></div>
+					</div>
+					<div class="Clear"></div>
+					<div class="post-actions">
+						<button class="post-action button">
+							<i class="fa fa-thumbs-up"></i> <span class="button-icon-title">Like</span>
+						</button>
+						<button class="post-action button">
+							<i class="fa fa-comment"></i> <span class="button-icon-title">Comment</span>
+						</button>
+						<button class="post-action button">
+							<i class="fa fa-share-alt"></i> <span class="button-icon-title">Share</span>
+						</button>
+					</div>
+					<div class="Clear"></div>
+					<div class="panel-footer">
+						<div class="comments-area">
+							<div class="comments-header">
+								<a href="#">View previous comments</a>
+							</div>
+							<div class="comment blurb">
+								<a class="blurb-img">
+									<div class="blurb-photo" style="background-image: url('/dist/images/ibrahim-fahmy.jpg');"></div>
+								</a>
+								<div class="blurb-content">
+									<div>
+										<a href="#" class="Bold">Ibrahim Fahmy</a>
+										<span>
+											Can you please share info regarding bus routes and schedules? Thanks.
+										</span>
+									</div>
+									<div class="comment-actions">
+										<div class="comment-action like-comment-action reactions-container">
+											<a href="#"><small>Like</small></a>
+										</div>
+										<a href="#" class="comment-action">
+											<i class="reaction-icon fa fa-thumbs-up"></i>
+											<small>8</small>
+										</a>
+										<a href="#" class="comment-action">
+											<small>Reply</small>
+										</a>
+										<span class="comment-action light-grey">
+											<small>22 mins</small>
+										</span>
+									</div>
+									<div class="Clear"></div>
+									<div class="replies">
+										<div class="replies-header">
+											<a href="#">View previous replies</a>
+										</div>
+										<div class="reply blurb">
+											<a class="blurb-img">
+												<div class="initials">CC</div>
+											</a>
+											<div class="blurb-content">
+												<div>
+													<a href="#" class="Bold">Corporate Communications</a>
+													<span>
+														Yes, the usual company transportation will operate normally through the regular roues at 6:00pm.
+													</span>
+												</div>
+												<div class="comment-actions">
+													<div class="comment-action like-comment-action reactions-container">
+														<a href="#"><small>Like</small></a>
+													</div>
+													<a href="#" class="comment-action">
+														<i class="reaction-icon fa fa-thumbs-up"></i>
+														<small>8</small>
+													</a>
+													<a href="#" class="comment-action">
+														<small>Reply</small>
+													</a>
+													<span class="comment-action light-grey">
+														<small>22 mins</small>
+													</span>
+												</div>
+												<div class="Clear"></div>
+												<div class="add-comment">
+													<div class="blurb">
+														<a class="blurb-img">
+															<div class="blurb-photo" style="background-image: url('/dist/images/ibrahim-fahmy.jpg');"></div>
+														</a>
+														<div class="blurb-content">
+															<div class="add-comment-form">
+																<textarea class="form-control add-comment-control" placeholder="Write a comment..."></textarea>
+																<div class="comment-add-ons">
+																	<button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
+																	<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+																</div>
+																<div class="add-comment-button">
+																	<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment blurb">
+								<a class="blurb-img">
+									<div class="blurb-photo" style="background-image: url('/dist/images/ibrahim-fahmy.jpg');"></div>
+								</a>
+								<div class="blurb-content">
+									<div>
+										<a href="#" class="Bold">Ibrahim Fahmy</a>
+										<span>
+											Can you please share info regarding bus routes and schedules? Thanks.
+										</span>
+									</div>
+									<div class="comment-actions">
+										<div class="comment-action like-comment-action reactions-container">
+											<a href="#"><small>Like</small></a>
+										</div>
+										<a href="#" class="comment-action">
+											<i class="reaction-icon fa fa-thumbs-up"></i>
+											<small>8</small>
+										</a>
+										<a href="#" class="comment-action">
+											<small>Reply</small>
+										</a>
+										<span class="comment-action light-grey">
+											<small>22 mins</small>
+										</span>
+									</div>
+									<div class="Clear"></div>
+								</div>
+							</div>
+						</div>
+						<div class="add-comment">
+							<div class="blurb">
+								<a class="blurb-img">
+									<div class="blurb-photo" style="background-image: url('/dist/images/ibrahim-fahmy.jpg');"></div>
+								</a>
+								<div class="blurb-content">
+									<div class="add-comment-form">
+										<textarea class="form-control add-comment-control" placeholder="Write a comment..."></textarea>
+										<div class="comment-add-ons">
+											<button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
+											<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+										</div>
+										<div class="add-comment-button">
+											<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-content sm-col-5">
+				<div class="panel card" style="background: white;height: 500px;"></div>
+			</div>
+		</div>
+		<div class="Clear"></div>
+	</div>
 
 </body>
-
 </html>
