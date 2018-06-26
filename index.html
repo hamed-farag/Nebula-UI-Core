@@ -182,18 +182,98 @@
                         <div class="Clear"></div>
                         <!--Buttons-->
                         <button class="button primary-button" style="margin-top: 20px">Post</button>
-                        <button class="button primary-button" style="margin-top: 20px" disabled>Post</button>
-                        <button class="button default-button" style="margin-top: 20px">Post</button>
-                        <button class="button primary-button  small-button" style="margin-top: 20px">
-                            <i class="fa fa-rss icon-margin"></i>Follow</button>
-                        <button class="button default-button small-button" style="margin-top: 20px">Edit</button>
-                        <button class="button default-button small-button" style="margin-top: 20px" disabled="disabled">Invite</button>
-                        <div class="button-group" style="margin-top: 20px">
+                        <button class="button primary-button" disabled>Post</button>
+                        <button class="button default-button" >Post</button>
+                        <button class="button primary-button small-button" ><i class="fa fa-rss icon-margin"></i>Follow</button>
+                        <button class="button default-button small-button">Edit</button>
+                        <button class="button default-button small-button" disabled="disabled">Invite</button>
+						
+						<!--Actions button in groups-->
+						<div class="button dropdown small opposite actions-button PaddZero dropdown-open">
+							<button class="dropdown-trigger button"><i class="fa fa-ellipsis-v"></i></button>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="#"><i class="fa fa-shield"></i> <span>Manage Page</span></a></li>
+									<li><a href="#"><i class="fa fa-cog"></i> <span>Page Settings</span></a></li>
+									<li><a href="#"><i class="fa fa-star-o"></i> <span>Remove from Quick Links</span></a></li>
+									<li><a href="#"><i class="fa fa-link"></i> <span>Copy Page Link</span></a></li>
+									<li><a href="#" data-fi-modal="#CreatePage"><i class="fa fa-plus"></i> <span>Create Page</span></a></li>
+									<li class="list-separator"></li>
+									<li><a href="#" data-fi-modal="#ReportPage"><i class="fa fa-exclamation-circle"></i> <span>Report Page</span></a></li>
+									<li><a href="#"><i class="fa fa-trash-o"></i> <span>Delete Page</span></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!--Following DropDown-->
+						<div class="dropdown opposite following-dropdown dropdown-open">
+							<button class="dropdown-trigger button small-button">
+								<span><i class="fa fa-check icon-margin"></i>Following</span>
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#" class="unfollow-context">
+										<i class="fa fa-eye-slash FL"></i>
+										<label class="FL Bold">
+											Unfollow Page
+											<br>
+											<span class="light-grey normal-text">Stop receiving updates about this page</span>
+										</label>
+									<div class="Clear"></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--Respond Dropdown-->
+						<div class="dropdown small dropdown-open">
+							<button class="dropdown-trigger button primary-button button small-button">
+								Respond <i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li><a href="#" class="rsvp-action" data-rsvp="going"><i class="fa fa-check"></i><span>Going</span></a></li>
+								<li><a href="#" class="rsvp-action" data-rsvp="will-phone-in"><i class="fa fa-phone"></i><span>Phoning in</span></a></li>
+								<li><a href="#" class="rsvp-action" data-rsvp="maybe"><i class="fa fa-question"></i><span>Maybe</span></a></li>
+								<li><a href="#" class="rsvp-action" data-rsvp="notgoing"><i class="fa fa-remove"></i><span>Not Going</span></a></li>
+							</ul>
+						</div>
+
+						<!--Going Dropdown-->
+						<div class="dropdown dropdown-open">
+							<button class="dropdown-trigger button default-button">
+								<i class="fa fa-check icon-margin"></i>Going
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#" class="unfollow-context">
+										<i class="fa fa-eye-slash FL"></i>
+										<label class="FL Bold">
+											Unfollow Page
+											<br>
+											<span class="light-grey normal-text">Stop receiving updates about this page</span>
+										</label>
+									<div class="Clear"></div>
+									</a>
+								</li>
+								<div class="dropdown-section-header">
+									<strong>Change Your Response</strong>
+								</div>
+								<li class="fi-dropdown-active"><a href="#" class="rsvp-action" data-rsvp="going"><i class="fa fa-check"></i><span>Going</span></a></li>
+								<li><a href="#" class="rsvp-action" data-rsvp="interested"><i class="fa fa-star"></i><span>Interested</span></a></li>
+								<li><a href="#" class="rsvp-action" data-rsvp="notgoing"><i class="fa fa-remove"></i><span>Not Going</span></a></li>	
+							</ul>
+						</div>
+							
+						<!--Button Group-->
+						<div class="button-group" style="margin-top: 20px">
                             <button class="button default-button small-button">
                                 <i class="fa fa-pencil icon-margin"></i>Post</button>
                             <button class="button default-button small-button">
                                 <i class="fa fa-envelope icon-margin"></i>Message</button>
-                        </div>
+						</div>
+						
                         <div class="Clear"></div>
                     </div>
                 </form>
@@ -226,8 +306,8 @@
                             <li>
                                 <div class="dropdown small dropdown-open">
                                     <button class="dropdown-trigger"><i class="fa fa-ellipsis-v"></i></button>
-                                    <ul class="dropdown-content">
-                                        <li><a href="#" data-fi-modal="#CreateEvent"><i class="fa fa-calendar"></i> <span>Create Event</span></a></li>
+                                    <ul class="dropdown-content MargZero">
+                                        <li><a href="#"><i class="fa fa-calendar"></i> <span>Create Event</span></a></li>
                                         <li><a href="#"><i class="fa fa-newspaper-o"></i> <span>Create Article</span></a></li>
                                     </ul>
                                 </div>
@@ -243,17 +323,28 @@
                 <div class="panel card post full-width">
                     <div class="post-info">Sponsored Post</div>
                     <div class="post-header">
-                        <a class="blurb-img">
-                            <div class="initials">CC</div>
-                        </a>
-                        <div class="blurb-content">
-                            <h5>
-                                <a href="#" class="Bold">Corporate Communications </a>
-                                <span class="destination"><i class="fa fa-chevron-right"></i><a href="#" class="Bold">HUB Team </a></span>
-                                <span class="light-grey">posted an offer.</span>
-                            </h5>
-                            <label class="date-label light-grey">Thursday at 8:37pm</label>
-                        </div>
+						<div class="FL">
+							<a class="blurb-img"><div class="initials">CC</div></a>
+							<div class="blurb-content">
+								<h5>
+									<a href="#" class="Bold">Corporate Communications </a>
+									<span class="destination"><i class="fa fa-chevron-right"></i><a href="#" class="Bold">HUB Team </a></span>
+									<span class="light-grey">posted an offer.</span>
+								</h5>
+								<label class="date-label light-grey">Thursday at 8:37pm</label>
+							</div>
+						</div>
+						<div class="dropdown opposite small dropdown-open FR">
+							<button class="dropdown-trigger button-icon"><i class="fa fa-ellipsis-v"></i></button>
+							<ul class="dropdown-content MargZero">
+								<li><a href="#"><i class="fa fa-bullhorn"></i> <span>Sponsor Post</span></a></li>
+								<li><a href="#"><i class="fa fa-bookmark"></i> <span>Save Post</span></a></li>
+								<li class="list-separator"></li>
+								<li><a href="#"><i class="fa fa-thumb-tack"></i> <span>Unpin Post</span></a></li>
+								<li><a href="#"><i class="fa fa-edit"></i> <span>Edit Post</span></a></li>
+								<li><a href="#"><i class="fa fa-trash"></i> <span>Delete Post</span></a></li>
+							</ul>
+						</div>
                     </div>
                     <div class="Clear"></div>
                     <div class="offer-actions">
@@ -365,8 +456,20 @@
                                                             <div class="add-comment-form">
                                                                 <textarea class="form-control add-comment-control" placeholder="Write a comment..."></textarea>
                                                                 <div class="comment-add-ons">
-                                                                    <button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
-                                                                    <button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+																	<div class="dropdown small opposite inverted dropdown-open">
+																		<button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
+																		<ul class="dropdown-content MargZero">
+																			<li><a href="#"><i class="fa fa-camera"></i> <span>Add Media</span></a></li>
+																			<li><a href="#"><i class="fa fa-paperclip"></i> <span>Add File</span></a></li>
+																		</ul>
+																	</div>
+																	<div class="dropdown small opposite inverted dropdown-open">
+																		<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+																		<ul class="dropdown-content MargZero">
+																			<li><a href="#"><i class="fa fa-camera"></i> <span>Add Media</span></a></li>
+																			<li><a href="#"><i class="fa fa-paperclip"></i> <span>Add File</span></a></li>
+																		</ul>
+																	</div>
                                                                 </div>
                                                                 <div class="add-comment-button">
                                                                     <input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
