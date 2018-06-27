@@ -979,19 +979,19 @@ form .panel {
 }
 
 .button.primary-button {
-  background-color: #2199CA !important;
-  border: solid 1px #2199CA !important;
-  color: #fff !important;
+  background-color: #2199CA;
+  border: solid 1px #2199CA;
+  color: #fff;
 }
 
 .button.primary-button:hover, .button.primary-button:focus {
-  border-color: #1278a2 !important;
-  background-color: #1278a2 !important;
+  border-color: #1278a2;
+  background-color: #1278a2;
 }
 
 .button.primary-button:active {
-  border-color: #0f5b7b !important;
-  background-color: #0f5b7b !important;
+  border-color: #0f5b7b;
+  background-color: #0f5b7b;
 }
 
 .button.default-button {
@@ -1114,9 +1114,18 @@ form .panel {
   background-color: #f6f6f6;
 }
 
+.dropdown .dropdown-content li a:active {
+  background-color: #e8e8e8;
+}
+
 .dropdown .dropdown-content li a.unfollow-context label, .dropdown .dropdown-content li a.unfollow-context span {
   width: 145px;
   cursor: pointer;
+}
+
+.dropdown .dropdown-content li.dropdown-active a {
+  background-color: #2199ca !important;
+  color: #fff !important;
 }
 
 .dropdown.inverted > .dropdown-content {
@@ -1163,6 +1172,15 @@ form .panel {
 .dropdown.following-dropdown button:active {
   background-color: #e0e0e0;
   border-color: #929292;
+}
+
+.dropdown .dropdown-new-section {
+  padding: 0.25rem 0.75rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: auto !important;
+  margin: 0.375em 0;
 }
 
 .form-field .radio-field {
@@ -1341,6 +1359,127 @@ textarea {
   color: #888;
   background-color: #EAEAEA;
   border-color: #DDD;
+}
+
+.widget {
+  background: #fff;
+  border-color: #ddd;
+}
+
+.widget header {
+  background-color: #f6f6f6;
+  color: #5A5A5A;
+  padding: 5px;
+}
+
+.widget header h3 {
+  font-size: 0.875rem;
+}
+
+.widget .widget-body {
+  padding: 5px;
+}
+
+.widget footer {
+  background-color: #f6f6f6;
+}
+
+.widget footer a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+}
+
+.widget footer a:hover {
+  background-color: #f0f0f0;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 0.625rem 0.75rem;
+  border-bottom: solid 1px #ddd;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.table td {
+  padding: 0.625rem 0.75rem;
+  border-bottom: solid 1px #ddd;
+  font-size: 0.75rem;
+}
+
+.table.table-bordered td, .table.table-bordered th {
+  border: 1px solid #ddd;
+}
+
+.table.table-small th {
+  font-size: 0.875rem;
+}
+
+.table.table-small td {
+  font-size: 0.75rem;
+}
+
+.table.table-small th, .table.table-small td {
+  padding: 0.325rem 0.75rem;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.create-post ul li {
+  float: left;
+  margin: 0;
+}
+
+.create-post ul li button {
+  padding: 0;
+  width: 2.5rem;
+  height: 2.25rem;
+  text-align: center;
+  color: #a1a1a1;
+  border: none;
+  background-color: #fff;
+  line-height: 1;
+  cursor: pointer;
+  border-right: solid 1px #ddd;
+  font-size: 0.875rem;
+}
+
+.create-post ul li button:hover, .create-post ul li button:focus {
+  background-color: #f6f6f6;
+  color: #2199ca;
+  outline: none;
+}
+
+.create-post ul li button.active {
+  background-color: #2199ca;
+  color: #fff;
+}
+
+.create-post ul li button.active:focus {
+  background-color: #1278a2;
+}
+
+.create-post ul li button .dropdown-content {
+  margin: 0;
+  margin-left: -1px;
 }
 
 .post {
@@ -1651,45 +1790,6 @@ textarea {
     width: auto !important;
     border-right: solid 1px #ddd !important;
   }
-}
-
-.create-post ul li {
-  float: left;
-  margin: 0;
-}
-
-.create-post ul li button {
-  padding: 0;
-  width: 2.5rem;
-  height: 2.25rem;
-  text-align: center;
-  color: #a1a1a1;
-  border: none;
-  background-color: #fff;
-  line-height: 1;
-  cursor: pointer;
-  border-right: solid 1px #ddd;
-  font-size: 0.875rem;
-}
-
-.create-post ul li button:hover, .create-post ul li button:focus {
-  background-color: #f6f6f6;
-  color: #2199ca;
-  outline: none;
-}
-
-.create-post ul li button.active {
-  background-color: #2199ca;
-  color: #fff;
-}
-
-.create-post ul li button.active:focus {
-  background-color: #1278a2;
-}
-
-.create-post ul li button .dropdown-content {
-  margin: 0;
-  margin-left: -1px;
 }
 
 /*# sourceMappingURL=nebula-ui.css.map */
