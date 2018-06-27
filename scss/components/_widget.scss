@@ -1,0 +1,35 @@
+// Widget
+//
+// Description Widget container
+//
+// Markup: ./styleguide/widget.html
+//
+// Styleguide: Components.Widget
+@import '../abstracts/variables';
+.widget {
+    background: $white-color;
+    border-color: #ddd;
+    header {
+        background-color: #f6f6f6;
+        color: $default-grey-color;
+        padding: 5px;
+        h3 {
+            font-size: 0.875rem;
+        }
+    }
+    .widget-body {
+        padding: 5px;
+    }
+    footer {
+        background-color: #f6f6f6;
+        a {
+            font-size: 0.875rem;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}
