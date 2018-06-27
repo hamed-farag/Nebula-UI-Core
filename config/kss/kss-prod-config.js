@@ -1,4 +1,5 @@
 var pkg = require("../../package.json");
 var kssCommon = require("./kss-common-config");
-kssCommon.destination = "../../dist/prod/" + pkg.version + "/doc";
-module.exports = kssCommon
+kssCommon.destination = "../../dist/prod/nebula-ui/" + pkg.version + "/doc";
+kssCommon.css = ["../nebula-ui.min.css"];
+module.exports = kssCommon;
