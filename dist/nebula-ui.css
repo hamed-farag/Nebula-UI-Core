@@ -96,7 +96,8 @@ svg {
 }
 
 input:focus,
-label:focus {
+label:focus,
+button:focus {
   outline: none;
 }
 
@@ -127,6 +128,10 @@ a:hover, a:focus {
   font-weight: bold;
 }
 
+.normal-text {
+  font-weight: normal;
+}
+
 .Marg0auto {
   margin: 0 auto;
 }
@@ -153,6 +158,10 @@ a:hover, a:focus {
 
 .PaddZero {
   padding: 0 !important;
+}
+
+.MargZero {
+  margin: 0 !important;
 }
 
 .full-width {
@@ -203,6 +212,16 @@ a:hover, a:focus {
 
 .icon-margin {
   margin-right: 0.375em;
+}
+
+.list-separator {
+  margin: 0.375em 0;
+  border-style: solid;
+  border-top-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-color: #ddd;
 }
 
 @media only screen and (min-width: 640px) {
@@ -936,7 +955,7 @@ form .panel {
   }
 }
 
-button {
+.button {
   font-size: 0.75rem;
   -webkit-transition: color 0.15s, background-color 0.15s, border-color 0.15s;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s;
@@ -947,11 +966,11 @@ button {
   padding: 0 1.375em;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
-button:disabled {
+.button:disabled {
   background-color: #ececec !important;
   border-color: #ddd !important;
   color: #989898 !important;
@@ -959,42 +978,64 @@ button:disabled {
   cursor: default !important;
 }
 
-button.primary-button {
-  background-color: #2199CA;
-  border: solid 1px #2199CA;
-  color: #fff;
+.button.primary-button {
+  background-color: #2199CA !important;
+  border: solid 1px #2199CA !important;
+  color: #fff !important;
 }
 
-button.primary-button:hover, button.primary-button:focus {
-  border-color: #1278a2;
-  background-color: #1278a2;
+.button.primary-button:hover, .button.primary-button:focus {
+  border-color: #1278a2 !important;
+  background-color: #1278a2 !important;
 }
 
-button.primary-button:active {
-  border-color: #0f5b7b;
-  background-color: #0f5b7b;
+.button.primary-button:active {
+  border-color: #0f5b7b !important;
+  background-color: #0f5b7b !important;
 }
 
-button.default-button {
+.button.default-button {
   background-color: #f6f6f6;
   border: solid 1px #b2b2b2;
   color: #5A5A5A;
 }
 
-button.default-button:hover, button.default-button:focus {
+.button.default-button:hover, .button.default-button:focus {
   background-color: #f0f0f0;
   border-color: #929292;
 }
 
-button.default-button:active {
+.button.default-button:active {
   background-color: #e0e0e0;
   border-color: #929292;
 }
 
-button.small-button {
-  height: 1.625rem;
+.button.small-button {
+  height: 1.625rem !important;
   padding: 0 0.75rem;
   line-height: 1;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
+.button-icon .fa.fa-ellipsis-v {
+  color: #cccccc;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.125rem;
+  opacity: 1 !important;
+  -webkit-transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+}
+
+.button-icon .fa.fa-ellipsis-v:hover, .button-icon .fa.fa-ellipsis-v:focus {
+  color: #5A5A5A;
 }
 
 .button-group .button {
@@ -1011,6 +1052,117 @@ button.small-button {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown.dropdown-open > .dropdown-content {
+  display: block;
+}
+
+.dropdown.small > .dropdown-content {
+  width: auto;
+  min-width: 9rem;
+  white-space: nowrap;
+}
+
+.dropdown .dropdown-trigger {
+  display: block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  font-size: 0.75rem;
+  z-index: 999;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 12rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #ddd;
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+  padding: 0.375em 0;
+}
+
+.dropdown .dropdown-content li {
+  width: 100%;
+}
+
+.dropdown .dropdown-content li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  color: #5A5A5A;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.dropdown .dropdown-content li a i {
+  font-size: 1.25em;
+  width: 1.3em;
+  margin-top: 0;
+}
+
+.dropdown .dropdown-content li a:hover, .dropdown .dropdown-content li a:focus {
+  background-color: #f6f6f6;
+}
+
+.dropdown .dropdown-content li a.unfollow-context label, .dropdown .dropdown-content li a.unfollow-context span {
+  width: 145px;
+  cursor: pointer;
+}
+
+.dropdown.inverted > .dropdown-content {
+  top: auto;
+  bottom: 130%;
+}
+
+.dropdown.opposite > .dropdown-content {
+  left: auto;
+  right: 0;
+}
+
+.dropdown.actions-button button {
+  background-color: #fff;
+  border: solid 1px #b2b2b2;
+  color: #5A5A5A;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  height: auto;
+}
+
+.dropdown.actions-button button:hover, .dropdown.actions-button button:focus {
+  background-color: #f0f0f0;
+  border: solid 1px #929292;
+}
+
+.dropdown.actions-button button:active {
+  background-color: #e0e0e0;
+  border-color: #929292;
+}
+
+.dropdown.following-dropdown button {
+  background-color: #fff;
+  border: solid 1px #b2b2b2;
+  color: #5A5A5A;
+  font-size: 0.875rem;
+}
+
+.dropdown.following-dropdown button:hover, .dropdown.following-dropdown button:focus {
+  background-color: #f0f0f0;
+  border: solid 1px #929292;
+}
+
+.dropdown.following-dropdown button:active {
+  background-color: #e0e0e0;
+  border-color: #929292;
 }
 
 .form-field .radio-field {
@@ -1523,6 +1675,7 @@ textarea {
 .create-post ul li button:hover, .create-post ul li button:focus {
   background-color: #f6f6f6;
   color: #2199ca;
+  outline: none;
 }
 
 .create-post ul li button.active {
@@ -1532,6 +1685,11 @@ textarea {
 
 .create-post ul li button.active:focus {
   background-color: #1278a2;
+}
+
+.create-post ul li button .dropdown-content {
+  margin: 0;
+  margin-left: -1px;
 }
 
 /*# sourceMappingURL=nebula-ui.css.map */
