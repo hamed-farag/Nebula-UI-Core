@@ -31,7 +31,6 @@
 		<div class="Clear"></div>
 	</div>
 
-
 	<!--People Page Layout-->
 	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">People page Layout</h2>
 	<div class="page-content">
@@ -64,7 +63,6 @@
 		<div class="Clear"></div>
 	</div>
 
-
 	<!--Profile Page Layout-->
 	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Profile page Layout</h2>
 	<div class="page-content">
@@ -85,7 +83,6 @@
 		</div>
 		<div class="Clear"></div>
 	</div>
-
 
 	<!--Groups Page Layout-->
 	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Groups page Layout</h2>
@@ -185,18 +182,171 @@
 						<div class="Clear"></div>
 						<!--Buttons-->
 						<button class="button primary-button" style="margin-top: 20px">Post</button>
-						<button class="button primary-button" style="margin-top: 20px" disabled>Post</button>
-						<button class="button default-button" style="margin-top: 20px">Post</button>
-						<button class="button primary-button  small-button" style="margin-top: 20px">
+						<button class="button primary-button" disabled>Post</button>
+						<button class="button default-button">Post</button>
+						<button class="button primary-button small-button">
 							<i class="fa fa-rss icon-margin"></i>Follow</button>
-						<button class="button default-button small-button" style="margin-top: 20px">Edit</button>
-						<button class="button default-button small-button" style="margin-top: 20px" disabled="disabled">Invite</button>
+						<button class="button default-button small-button">Edit</button>
+						<button class="button default-button small-button" disabled="disabled">Invite</button>
+
+						<!--Actions button in groups-->
+						<div class="button dropdown small opposite actions-button PaddZero dropdown-open">
+							<button class="dropdown-trigger button">
+								<i class="fa fa-ellipsis-v"></i>
+							</button>
+							<div class="dropdown-content">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fa fa-shield"></i>
+											<span>Manage Page</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-cog"></i>
+											<span>Page Settings</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-star-o"></i>
+											<span>Remove from Quick Links</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-link"></i>
+											<span>Copy Page Link</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" data-fi-modal="#CreatePage">
+											<i class="fa fa-plus"></i>
+											<span>Create Page</span>
+										</a>
+									</li>
+									<li class="list-separator"></li>
+									<li>
+										<a href="#" data-fi-modal="#ReportPage">
+											<i class="fa fa-exclamation-circle"></i>
+											<span>Report Page</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-trash-o"></i>
+											<span>Delete Page</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!--Following DropDown-->
+						<div class="dropdown opposite following-dropdown dropdown-open">
+							<button class="dropdown-trigger button small-button">
+								<span>
+									<i class="fa fa-check icon-margin"></i>Following</span>
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#" class="unfollow-context">
+										<i class="fa fa-eye-slash FL"></i>
+										<label class="FL Bold">
+											Unfollow Page
+											<br>
+											<span class="light-grey normal-text">Stop receiving updates about this page</span>
+										</label>
+										<div class="Clear"></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--Respond Dropdown-->
+						<div class="dropdown small dropdown-open">
+							<button class="dropdown-trigger button primary-button button small-button">
+								Respond
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#">
+										<i class="fa fa-check"></i>
+										<span>Going</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										<span>Phoning in</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-question"></i>
+										<span>Maybe</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-remove"></i>
+										<span>Not Going</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--Going Dropdown-->
+						<div class="dropdown dropdown-open">
+							<button class="dropdown-trigger button default-button small-button">
+								<i class="fa fa-check icon-margin"></i>Going
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#" class="unfollow-context">
+										<i class="fa fa-eye-slash FL"></i>
+										<label class="FL Bold">
+											Unfollow Page
+											<br>
+											<span class="light-grey normal-text">Stop receiving updates about this page</span>
+										</label>
+										<div class="Clear"></div>
+									</a>
+								</li>
+								<li class="dropdown-new-section Bold">Change Your Response</li>
+								<li class="dropdown-active">
+									<a href="#">
+										<i class="fa fa-check"></i>
+										<span>Going</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-star"></i>
+										<span>Interested</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-remove"></i>
+										<span>Not Going</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!--Button Group-->
 						<div class="button-group" style="margin-top: 20px">
 							<button class="button default-button small-button">
 								<i class="fa fa-pencil icon-margin"></i>Post</button>
 							<button class="button default-button small-button">
 								<i class="fa fa-envelope icon-margin"></i>Message</button>
 						</div>
+
 						<div class="Clear"></div>
 					</div>
 				</form>
@@ -211,7 +361,6 @@
 		</div>
 	</div>
 
-
 	<!--Post Card-->
 	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Post Card</h2>
 	<div class="page-content">
@@ -223,16 +372,44 @@
 				<div class="panel card full-width create-post">
 					<div class="panel-header PaddZero">
 						<ul>
-							<li><button class="active"><i class="fa fa-pencil"></i></button></li>
-							<li><button><i class="fa fa-camera"></i></button></li>
-							<li><button><i class="fa fa-paperclip"></i></button></li>
-							<li><button><i class="fa fa-list-ul"></i></button></li>
 							<li>
-								<div class="dropdown dropdown-open">
-									<button class="dropdown-trigger"><i class="fa fa-ellipsis-v"></i></button>
-									<ul class="dropdown-content" style="display:none">
-										<li><a href="#" data-fi-modal="#CreateEvent"><i class="fa fa-calendar"></i> <span>Create Event</span></a></li>
-										<li><a href="#"><i class="fa fa-newspaper-o"></i> <span>Create Article</span></a></li>
+								<button class="active">
+									<i class="fa fa-pencil"></i>
+								</button>
+							</li>
+							<li>
+								<button>
+									<i class="fa fa-camera"></i>
+								</button>
+							</li>
+							<li>
+								<button>
+									<i class="fa fa-paperclip"></i>
+								</button>
+							</li>
+							<li>
+								<button>
+									<i class="fa fa-list-ul"></i>
+								</button>
+							</li>
+							<li>
+								<div class="dropdown small dropdown-open">
+									<button class="dropdown-trigger">
+										<i class="fa fa-ellipsis-v"></i>
+									</button>
+									<ul class="dropdown-content MargZero">
+										<li>
+											<a href="#">
+												<i class="fa fa-calendar"></i>
+												<span>Create Event</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-newspaper-o"></i>
+												<span>Create Article</span>
+											</a>
+										</li>
 									</ul>
 								</div>
 							</li>
@@ -247,25 +424,71 @@
 				<div class="panel card post full-width">
 					<div class="post-info">Sponsored Post</div>
 					<div class="post-header">
-						<a class="blurb-img">
-							<div class="initials">CC</div>
-						</a>
-						<div class="blurb-content">
-							<h5>
-								<a href="#" class="Bold">Corporate Communications </a>
-								<span class="destination"><i class="fa fa-chevron-right"></i><a href="#" class="Bold">HUB Team </a></span>
-								<span class="light-grey">posted an offer.</span>
-							</h5>
-							<label class="date-label light-grey">Thursday at 8:37pm</label>
+						<div class="FL">
+							<a class="blurb-img">
+								<div class="initials">CC</div>
+							</a>
+							<div class="blurb-content">
+								<h5>
+									<a href="#" class="Bold">Corporate Communications </a>
+									<span class="destination">
+										<i class="fa fa-chevron-right"></i>
+										<a href="#" class="Bold">HUB Team </a>
+									</span>
+									<span class="light-grey">posted an offer.</span>
+								</h5>
+								<label class="date-label light-grey">Thursday at 8:37pm</label>
+							</div>
+						</div>
+						<div class="dropdown opposite small dropdown-open FR">
+							<button class="dropdown-trigger button-icon">
+								<i class="fa fa-ellipsis-v"></i>
+							</button>
+							<ul class="dropdown-content MargZero">
+								<li>
+									<a href="#">
+										<i class="fa fa-bullhorn"></i>
+										<span>Sponsor Post</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-bookmark"></i>
+										<span>Save Post</span>
+									</a>
+								</li>
+								<li class="list-separator"></li>
+								<li>
+									<a href="#">
+										<i class="fa fa-thumb-tack"></i>
+										<span>Unpin Post</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-edit"></i>
+										<span>Edit Post</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-trash"></i>
+										<span>Delete Post</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="Clear"></div>
 					<div class="offer-actions">
 						<span class="FL offer-expiry">
-							<i class="fa fa-clock-o icon-margin"></i><span>Expires in 4 weeks</span>
+							<i class="fa fa-clock-o icon-margin"></i>
+							<span>Expires in 4 weeks</span>
 						</span>
-						<button class="button default-button small-button FR"><i class="fa fa-bookmark-o icon-margin"></i>Unsave Post</button>
-						<button class="button default-button small-button FR"><i class="fa fa-bookmark icon-margin"></i>Save Post</button>
+						<button class="button default-button small-button FR">
+							<i class="fa fa-bookmark-o icon-margin"></i>Unsave Post</button>
+						<button class="button default-button small-button FR">
+							<i class="fa fa-bookmark icon-margin"></i>Save Post</button>
 						<div class="Clear"></div>
 					</div>
 					<div class="Clear"></div>
@@ -287,13 +510,16 @@
 					<div class="Clear"></div>
 					<div class="post-actions">
 						<button class="post-action button">
-							<i class="fa fa-thumbs-up"></i> <span class="button-icon-title">Like</span>
+							<i class="fa fa-thumbs-up"></i>
+							<span class="button-icon-title">Like</span>
 						</button>
 						<button class="post-action button">
-							<i class="fa fa-comment"></i> <span class="button-icon-title">Comment</span>
+							<i class="fa fa-comment"></i>
+							<span class="button-icon-title">Comment</span>
 						</button>
 						<button class="post-action button">
-							<i class="fa fa-share-alt"></i> <span class="button-icon-title">Share</span>
+							<i class="fa fa-share-alt"></i>
+							<span class="button-icon-title">Share</span>
 						</button>
 					</div>
 					<div class="Clear"></div>
@@ -315,7 +541,9 @@
 									</div>
 									<div class="comment-actions">
 										<div class="comment-action like-comment-action reactions-container">
-											<a href="#"><small>Like</small></a>
+											<a href="#">
+												<small>Like</small>
+											</a>
 										</div>
 										<a href="#" class="comment-action">
 											<i class="reaction-icon fa fa-thumbs-up"></i>
@@ -346,7 +574,9 @@
 												</div>
 												<div class="comment-actions">
 													<div class="comment-action like-comment-action reactions-container">
-														<a href="#"><small>Like</small></a>
+														<a href="#">
+															<small>Like</small>
+														</a>
 													</div>
 													<a href="#" class="comment-action">
 														<i class="reaction-icon fa fa-thumbs-up"></i>
@@ -369,11 +599,47 @@
 															<div class="add-comment-form">
 																<textarea class="form-control add-comment-control" placeholder="Write a comment..."></textarea>
 																<div class="comment-add-ons">
-																	<button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
-																	<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+																	<div class="dropdown small opposite inverted dropdown-open">
+																		<button class="add-attachment-to-comment dropdown-trigger">
+																			<i class="fa fa-plus-circle"></i>
+																		</button>
+																		<ul class="dropdown-content MargZero">
+																			<li>
+																				<a href="#">
+																					<i class="fa fa-camera"></i>
+																					<span>Add Media</span>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="#">
+																					<i class="fa fa-paperclip"></i>
+																					<span>Add File</span>
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																	<div class="dropdown small opposite inverted dropdown-open">
+																		<button class="dropdown-trigger">
+																			<i class="fa fa-smile-o"></i>
+																		</button>
+																		<ul class="dropdown-content MargZero">
+																			<li>
+																				<a href="#">
+																					<i class="fa fa-camera"></i>
+																					<span>Add Media</span>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="#">
+																					<i class="fa fa-paperclip"></i>
+																					<span>Add File</span>
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
 																</div>
 																<div class="add-comment-button">
-																	<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
+																	<input type="submit" class="button default-button" disabled="disabled" value="Post">
 																</div>
 															</div>
 														</div>
@@ -397,7 +663,9 @@
 									</div>
 									<div class="comment-actions">
 										<div class="comment-action like-comment-action reactions-container">
-											<a href="#"><small>Like</small></a>
+											<a href="#">
+												<small>Like</small>
+											</a>
 										</div>
 										<a href="#" class="comment-action">
 											<i class="reaction-icon fa fa-thumbs-up"></i>
@@ -423,11 +691,15 @@
 									<div class="add-comment-form">
 										<textarea class="form-control add-comment-control" placeholder="Write a comment..."></textarea>
 										<div class="comment-add-ons">
-											<button class="add-attachment-to-comment dropdown-trigger"><i class="fa fa-plus-circle"></i></button>
-											<button class="dropdown-trigger"><i class="fa fa-smile-o"></i></button>
+											<button class="add-attachment-to-comment dropdown-trigger">
+												<i class="fa fa-plus-circle"></i>
+											</button>
+											<button class="dropdown-trigger">
+												<i class="fa fa-smile-o"></i>
+											</button>
 										</div>
 										<div class="add-comment-button">
-											<input type="submit" class="button default-button small-button" disabled="disabled" value="Post">
+											<input type="submit" class="button default-button" disabled="disabled" value="Post">
 										</div>
 									</div>
 								</div>
@@ -459,10 +731,10 @@
 	</div>
 
 
-	
-    <!--Tables-->
-    <h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Tables</h2>
-    <div class="page-content">
+
+	<!--Tables-->
+	<h2 style="text-align: center; font-size: 20px;margin-bottom: 20px">Tables</h2>
+	<div class="page-content">
 		<div class="middle-content sm-col-12">
 			<h3 style="font-size: 18px;margin-bottom: 20px">Default Table</h3>
 			<div class="panel card full-width PaddZero table-responsive">
@@ -480,7 +752,7 @@
 					<tbody>
 						<tr>
 							<td>
-								<a href="#" >1776184</a>
+								<a href="#">1776184</a>
 							</td>
 							<td>Normal</td>
 							<td>HUB</td>
@@ -513,9 +785,9 @@
 				<div class="Clear"></div>
 			</div>
 		</div>
-        <div class="Clear"></div>
+		<div class="Clear"></div>
 	</div>
-	
+
 
 	<div class="page-content">
 		<div class="middle-content sm-col-12">
@@ -535,7 +807,7 @@
 					<tbody>
 						<tr>
 							<td>
-								<a href="#" >1776184</a>
+								<a href="#">1776184</a>
 							</td>
 							<td>Normal</td>
 							<td>HUB</td>
@@ -589,7 +861,7 @@
 					<tbody>
 						<tr>
 							<td>
-								<a href="#" >1776184</a>
+								<a href="#">1776184</a>
 							</td>
 							<td>Normal</td>
 							<td>HUB</td>
@@ -625,4 +897,5 @@
 		<div class="Clear"></div>
 	</div>
 </body>
+
 </html>

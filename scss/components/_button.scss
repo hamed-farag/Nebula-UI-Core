@@ -1,4 +1,4 @@
-button{
+.button{
     font-size: 0.75rem;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s;
     cursor: pointer;
@@ -45,10 +45,27 @@ button{
     }
     
     &.small-button {
-        height: 1.625rem;
+        height: 1.625rem!important;
         padding: 0 0.75rem;
         line-height: 1;
     }
+    &-icon{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        .fa.fa-ellipsis-v{
+            color: #cccccc;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 1.125rem;
+            opacity: 1 !important;
+            transition: color 0.15s, background-color 0.15s, border-color 0.15s;
+            &:hover, &:focus{
+                color: $default-grey-color;
+            }
+        }
+    }    
 }
 
 .button-group {
@@ -66,3 +83,118 @@ button{
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    &.dropdown-open > .dropdown-content{
+        display: block;
+    }
+    &.small > .dropdown-content{
+        width: auto;
+        min-width: 9rem;
+        white-space: nowrap;
+    }
+    .dropdown-trigger{
+        display: block;
+    }
+    .dropdown-content{
+        display: none;
+        font-size: 0.75rem;
+        z-index: 999;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 12rem;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+        border:solid 1px #ddd;
+        margin-top: 0.375rem;
+        margin-bottom: 0.375rem;
+        padding: 0.375em 0;
+        li{
+            width:100%;
+            a{
+                display: block;
+                padding: 0.5rem 0.75rem;
+                line-height: 1.25;
+                color: $default-grey-color;
+                text-decoration: none;
+                font-weight: 700;
+                i{
+                    font-size: 1.25em;
+                    width: 1.3em;
+                    margin-top: 0;
+                }
+                &:hover, &:focus{
+                    background-color: #f6f6f6;
+                }
+                &:active{
+                    background-color: #e8e8e8;
+                }
+                &.unfollow-context label, &.unfollow-context span{
+                    width:145px;
+                    cursor: pointer;
+                }
+            }
+            &.dropdown-active a{
+                background-color: #2199ca !important;
+                color: #fff !important;
+            }
+
+        }
+    }
+    &.inverted > .dropdown-content {
+        top: auto;
+        bottom: 130%;
+    }
+    &.opposite > .dropdown-content {
+        left: auto;
+        right: 0;
+    }
+    &.actions-button{
+        button{
+            background-color: #fff;
+            border: solid 1px #b2b2b2;
+            color: $default-grey-color;
+            font-size: 0.875rem;
+            padding: 0.25rem 0.75rem;
+            height: auto;
+            &:hover, &:focus
+            {
+                background-color: #f0f0f0;
+                border:solid 1px #929292;
+            }
+            &:active{
+                background-color: #e0e0e0;
+                border-color: #929292;
+            }
+        }
+    }
+    &.following-dropdown button{
+        background-color: #fff;
+        border:solid 1px #b2b2b2;
+        color: $default-grey-color;
+        font-size: 0.875rem;
+        &:hover, &:focus{
+            background-color: #f0f0f0;
+            border:solid 1px #929292;
+
+        }
+        &:active{
+            background-color: #e0e0e0;
+            border-color: #929292;
+        }
+    }
+    .dropdown-new-section{
+        padding: 0.25rem 0.75rem;
+        background-color: #f8f8f8;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        width: auto!important;
+        margin: 0.375em 0;
+    }
+}
+
+
