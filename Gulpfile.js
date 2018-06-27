@@ -58,7 +58,7 @@ gulp.task('prod', function () {
 		}))
 		.pipe(autoprefixer(autoprefixerOptions))
 		.pipe(rename("/nebula-ui.min.css"))
-		.pipe(gulp.dest(output + '/prod/' + pkg.version));
+		.pipe(gulp.dest(output + '/prod/nebula-ui/' + pkg.version));
 });
 
 gulp.task('styleguide', function (cb) {

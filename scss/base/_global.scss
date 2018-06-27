@@ -46,7 +46,8 @@ svg {
 }
 
 input:focus,
-label:focus {
+label:focus,
+button:focus {
 	outline: none
 }
 
@@ -78,6 +79,10 @@ a{
 	font-weight: bold;
 }
 
+.normal-text{
+	font-weight: normal;
+}
+
 .Marg0auto {
 	margin: 0 auto
 }
@@ -106,10 +111,13 @@ a{
 	padding: 0!important;
 }
 
+.MargZero{
+	margin: 0!important;
+}
+
 .full-width{
 	width: 100%;
 }
-
 
 .Padd20 {
 	padding: 1.25rem
@@ -151,6 +159,16 @@ a{
 
 .icon-margin {
 	margin-right: 0.375em;
+}
+
+.list-separator{
+	margin: 0.375em 0;
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+	border-bottom-width: 0;
+	border-color: #ddd;
 }
 
 @media #{$sm} {
