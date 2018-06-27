@@ -1225,6 +1225,54 @@ textarea {
   background-color: #f0f0f0;
 }
 
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 0.625rem 0.75rem;
+  border-bottom: solid 1px #ddd;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.table td {
+  padding: 0.625rem 0.75rem;
+  border-bottom: solid 1px #ddd;
+  font-size: 0.75rem;
+}
+
+.table.table-bordered td, .table.table-bordered th {
+  border: 1px solid #ddd;
+}
+
+.table.table-small th {
+  font-size: 0.875rem;
+}
+
+.table.table-small td {
+  font-size: 0.75rem;
+}
+
+.table.table-small th, .table.table-small td {
+  padding: 0.325rem 0.75rem;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 .post {
   margin-bottom: 1.25rem;
   position: relative;

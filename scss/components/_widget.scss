@@ -1,3 +1,10 @@
+// Widget
+//
+// Description Widget container
+//
+// Markup: ./styleguide/widget.html
+//
+// Styleguide: Components.Widget
 @import '../abstracts/variables';
 .widget {
     background: $white-color;
@@ -5,10 +12,8 @@
     header {
         background-color: #f6f6f6;
         color: $default-grey-color;
-        // font-weight: bolder;
         padding: 5px;
         h3 {
-            // margin-left: 3px;
             font-size: 0.875rem;
         }
     }
