@@ -1191,6 +1191,40 @@ textarea {
   border-color: #DDD;
 }
 
+.widget {
+  background: #fff;
+  border-color: #ddd;
+}
+
+.widget header {
+  background-color: #f6f6f6;
+  color: #5A5A5A;
+  padding: 5px;
+}
+
+.widget header h3 {
+  font-size: 0.875rem;
+}
+
+.widget .widget-body {
+  padding: 5px;
+}
+
+.widget footer {
+  background-color: #f6f6f6;
+}
+
+.widget footer a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+}
+
+.widget footer a:hover {
+  background-color: #f0f0f0;
+}
+
 .post {
   margin-bottom: 1.25rem;
   position: relative;
