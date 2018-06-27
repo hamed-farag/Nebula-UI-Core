@@ -1,6 +1,6 @@
 {
-	"name": "itworx-hub-nebula-ui",
-	"title": "Nebula UI",
+	"name": "itworxhub-nebula-ui",
+	"title": "Nebula UI Framework",
 	"version": "1.0.0",
 	"description": "Nebula UI Framework, For ITWORX HUB product and the integrated services",
 	"main": "Gulpfile.js",
@@ -22,7 +22,10 @@
 	},
 	"contributors": [
 		"Sylvia Adel",
-		"Hamed Farag"
+		"Hamed Farag",
+		"Waleed Tayseer",
+		"Menna Nader",
+		"Alaa Salem"
 	],
 	"bugs": {
 		"url": "https://github.com/hamed-farag/Nebula-UI/issues"
