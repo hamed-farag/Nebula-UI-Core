@@ -68,6 +68,11 @@ a{
 	}
 }
 
+hr{
+	margin: 1.25rem 0;
+    border-top: solid 1px #ddd;
+}
+
 /**********General Styles**********/
 
 .row:before, .row:after, .tabs-vertical:before, .tabs-vertical:after, .tabs > ul:before, .tabs > ul:after, .tab-content:before, .tab-content:after, .form-field:before, .form-field:after, .check-radio:before, .check-radio:after, .validation:before, .validation:after, .form .hint:before, .form .hint:after, .panel-header:before, .panel-header:after, .panel-footer:before, .panel-footer:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .post-actions:before, .post-actions:after, .comment-actions:before, .comment-actions:after, .breadcrumb:before, .breadcrumb:after, .progress:before, .progress:after{
