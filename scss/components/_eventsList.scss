@@ -1,0 +1,53 @@
+// Events List
+//
+// Markup: ./styleguide/eventsList.html
+//
+// Styleguide: Components.Events List
+
+.events-list{
+    h3{
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+    }
+    ul{
+        margin: -0.75rem -0.75rem -0.75rem;
+        li{
+            border-bottom:solid 1px #ddd;
+            background-color: #fff;
+            border-top: 0;
+            a{
+                position: relative;
+                display: block;
+                padding: 0.625rem 0.75rem;
+                padding-right: 2rem;
+                text-decoration: none;
+                color: $default-grey-color;
+                &:hover, &:focus{
+                    background-color: #f0f0f0;
+                }
+                &:active{
+                    background-color: #e8e8e8;
+                }
+                .fa.fa-chevron-right{
+                    position: absolute;
+                    top: 50%;
+                    right: 0.75rem;
+                    transform: translateY(-50%);
+                    font-size: 0.75em;
+                    margin-left: 0.25em;
+                }
+                i.icon-margin{
+                    margin-right: 0.5rem;
+                    margin-top: 0.25rem;
+                    float: left;
+                }
+                span.light-grey{
+                    font-size: 0.75rem;    
+                    padding-left: 1.5rem;
+                    line-height: 2
+                }
+            }
+        }
+    }
+}
