@@ -1,3 +1,9 @@
+// Settings Menu
+//
+// Markup: ./styleguide/settingsMenu.html
+//
+// Styleguide: Components.Settings Menu
+
 .settings-menu{
     width: 100%;
     button.dropdown-trigger{
@@ -11,6 +17,10 @@
         color: #2199CA !important;
         border: none;
         width: 20%;
+        min-width: 1em;
+        i{
+            min-width: 1em;
+        }
     }
     .dropdown-content{
         padding: 0;
@@ -19,7 +29,6 @@
             padding: 0.75rem 2.375rem 0.75rem 0.75rem;
             border-bottom: solid 1px #ddd;
             background-color: #f8f8f8;
-            display: block;
             line-height: 1.25;
             h3{
                 font-size: 1.125rem;
@@ -51,7 +60,7 @@
             }
         }
         li{
-            border-top:solid 2px #ddd;
+            border-top:solid 1px #ddd;
             &:first-child{
                 border-top:0;
             }
@@ -76,9 +85,69 @@
     }
 }
 
-@media #{$sm}{
-    .dropdown-content{
-        width: 12rem!important;
+@media #{$md}{
+    .settings-menu{
+        .dropdown-header{
+            display: none;
+        }
+        .dropdown-content{
+            width: 12rem!important;
+            .arrow-up {
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid #ccc;
+                position: absolute;
+                top: -9px;
+                right: 15px;
+            }
+            .arrow-up:before {
+                content:'';
+                position:absolute;
+                top: 1px;
+                right: -7px;
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid white;
+            }
+            li{
+                border-top:0;
+                a{
+                    font-size: 0.75rem!important;
+                    padding: 0.5rem 0.75rem;
+                    span{
+                        font-size: 0.75rem;
+                    }
+                    &.blue-color{
+                        border-top:solid 1px #ddd;
+                        border-bottom:solid 1px #ddd;
+                        margin: 0.375em 0;
+                        padding: 0.875rem 0.75rem;
+                    }
+                    .fa-mobile {
+                        font-size: 1.5em!important;
+                        margin-top: -0.05em!important;
+                    }
+                }
+                &.user-name{
+                    border-bottom:solid 1px #ddd;
+                    margin-bottom: 0.375em;
+                    span{
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
     }
+}
 
+@media #{$sm}{
+    .settings-menu{
+        button.dropdown-trigger{
+            width: auto;
+        }
+    }
 }
