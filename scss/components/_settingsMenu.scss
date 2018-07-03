@@ -87,7 +87,7 @@
 
 @media #{$md}{
     .settings-menu{
-        .dropdown-header{
+        .dropdown-header.name{
             display: none;
         }
         .dropdown-content{
