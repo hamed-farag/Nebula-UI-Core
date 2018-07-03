@@ -6,6 +6,11 @@
 
 .settings-menu{
     width: 100%;
+    &.dropdown-open{
+        button.dropdown-trigger{
+            color:#2199CA !important;
+        }
+    }
     button.dropdown-trigger{
         padding: 0 0.875rem;
         font-size: 1.125rem;
@@ -14,7 +19,7 @@
         height: 3rem;
         line-height: 3rem;
         background-color: #f2f2f2!important;
-        color: #2199CA !important;
+        color: $default-grey-color!important;
         border: none;
         width: 20%;
         min-width: 1em;
