@@ -1,61 +1,55 @@
 .search-bar {
-    display: none
-}
-
-@media #{$md} {
-    .search-bar {
-        display: inline-block;
-        position: relative;
-        z-index: 5;
-        width: 34rem;
-        .search-control {
-            height: 2.125rem;
-            width: 100%;
-            background-color: #fff;
-            -webkit-transition: all 0.2s;
-            -moz-transition: all 0.2s;
-            -o-transition: all 0.2s;
-            transition: all 0.2s;
-            padding: 0.5em 0.75em;
-            border: solid 1px #e4e4e4;
-            font-size: 0.875rem;
-            line-height: 1.3;
-            color: $default-grey-color;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    width: 34rem;
+    .search-control {
+        height: 2.125rem;
+        width: 100%;
+        background-color: #fff;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        padding: 0.5em 0.75em;
+        border: solid 1px #e4e4e4;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        color: $default-grey-color;
+        &::placeholder {
+            color: $lightgrey-color;
+        }
+        &:focus {
+            border-color: #b8b8b8;
             &::placeholder {
-                color: $lightgrey-color;
-            }
-            &:focus {
-                border-color: #b8b8b8;
-                &::placeholder {
-                    color: $default-grey-color;
-                }
+                color: $default-grey-color;
             }
         }
-        input[type="submit"] {
-            position: absolute;
-            top: 1px;
-            right: 1px;
-            bottom: 1px;
-            height: auto;
-            width: 2.125em;
-            z-index: 1;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-        }
-        &:after {
-            right: 0.5em;
-            content: "\f002";
-            position: absolute;
-            top: 50%;
-            margin-top: -0.5em;
-            width: 1em;
-            height: 1em;
-            font-family: 'FontAwesome';
-            font-size: 1.25em;
-            line-height: 1em;
-            text-align: center;
-            color: $default-grey-color;
-        }
+    }
+    input[type="submit"] {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        height: auto;
+        width: 2.125em;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &:after {
+        right: 0.5em;
+        content: "\f002";
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5em;
+        width: 1em;
+        height: 1em;
+        font-family: 'FontAwesome';
+        font-size: 1.25em;
+        line-height: 1em;
+        text-align: center;
+        color: $default-grey-color;
     }
 }

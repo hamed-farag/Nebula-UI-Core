@@ -1,0 +1,158 @@
+// Settings Menu
+//
+// Markup: ./styleguide/settingsMenu.html
+//
+// Styleguide: Components.Settings Menu
+
+.settings-menu{
+    width: 100%;
+    &.dropdown-open{
+        button.dropdown-trigger{
+            color:#2199CA !important;
+        }
+    }
+    button.dropdown-trigger{
+        padding: 0 0.875rem;
+        font-size: 1.125rem;
+        transition: opacity 0.15s;
+        border-left: 1px solid #ddd!important;
+        height: 3rem;
+        line-height: 3rem;
+        background-color: #f2f2f2!important;
+        color: $default-grey-color!important;
+        border: none;
+        width: 20%;
+        min-width: 1em;
+        i{
+            min-width: 1em;
+        }
+    }
+    .dropdown-content{
+        padding: 0;
+        width: 100%;
+        .dropdown-header{
+            padding: 0.75rem 2.375rem 0.75rem 0.75rem;
+            border-bottom: solid 1px #ddd;
+            background-color: #f8f8f8;
+            line-height: 1.25;
+            h3{
+                font-size: 1.125rem;
+                color: $default-grey-color;
+            }
+            button.close-button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0.25rem 0.375rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: 0.25em;
+                background: none;
+                border:none;
+                opacity: 0.55;
+                font-family: 'FontAwesome';
+                color: $default-grey-color;
+                &:before{
+                    content: "×";
+                }
+            }
+        }
+        .user-name{
+            span{
+                padding-top: 0.5rem;
+                float: left;
+                margin-left: 0.5rem;
+            }
+        }
+        li{
+            border-top:solid 1px #ddd;
+            &:first-child{
+                border-top:0;
+            }
+            a{
+                padding: 0.75rem;
+                font-size: 0.875rem;
+                i{
+                    height: 0.6875em;
+                    float: left;
+                    margin-top: 0.1rem;
+                    &.fa-mobile{
+                        width: 1em;
+                        font-size: 1.5rem;
+                        margin-top: -0.1em;
+                    }
+                    span{
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$md}{
+    .settings-menu{
+        .dropdown-header.name{
+            display: none;
+        }
+        .dropdown-content{
+            width: 12rem!important;
+            .arrow-up {
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid #ccc;
+                position: absolute;
+                top: -9px;
+                right: 15px;
+            }
+            .arrow-up:before {
+                content:'';
+                position:absolute;
+                top: 1px;
+                right: -7px;
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 8px solid white;
+            }
+            li{
+                border-top:0;
+                a{
+                    font-size: 0.75rem!important;
+                    padding: 0.5rem 0.75rem;
+                    span{
+                        font-size: 0.75rem;
+                    }
+                    &.blue-color{
+                        border-top:solid 1px #ddd;
+                        border-bottom:solid 1px #ddd;
+                        margin: 0.375em 0;
+                        padding: 0.875rem 0.75rem;
+                    }
+                    .fa-mobile {
+                        font-size: 1.5em!important;
+                        margin-top: -0.05em!important;
+                    }
+                }
+                &.user-name{
+                    border-bottom:solid 1px #ddd;
+                    margin-bottom: 0.375em;
+                    span{
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$sm}{
+    .settings-menu{
+        button.dropdown-trigger{
+            width: auto;
+        }
+    }
+}

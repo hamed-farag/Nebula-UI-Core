@@ -10,28 +10,6 @@
         color: #999;
         border-bottom: 1px solid #ddd;
     }
-    a.blurb-img{
-        width: 2.125rem;
-        float: left;
-        font-size: 4em;
-        padding: 0;
-        text-align: center;
-        transition: opacity 0.25s;
-        display: block;
-        cursor: pointer;
-        &:hover{
-            opacity: 0.75;
-            text-decoration: none;                
-        }
-    }
-    .blurb-photo {
-        padding-top: 100%;
-        border-radius: 50%;
-        box-shadow: 0px 0px 1px 1px #ddd;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .blurb-content{
         margin-left: 2.625rem;
         vertical-align: top;
