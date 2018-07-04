@@ -1,0 +1,25 @@
+// Main Footer
+//
+// Markup: ./styleguide/mainFooter.html
+//
+// Styleguide: Components.Main Footer
+
+footer.main-footer{
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 1.25rem;
+    a{
+        color: #999;
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 3px;
+            height: 3px;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            background-color: #a1a1a1;
+            border-radius: 50%;
+        }
+    }
+}
