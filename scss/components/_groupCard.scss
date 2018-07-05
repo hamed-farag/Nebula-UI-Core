@@ -1,0 +1,52 @@
+// Group Card
+//
+// Markup: ./styleguide/groupCard.html
+//
+// Styleguide: Components.Group Card
+
+.groups-grid {
+    .group-card{
+        margin-bottom: 1.25rem;
+        div.panel.card{
+            padding-right: 0.5rem !important;
+            .group-media{
+                width: 4.5rem;
+                float: left;
+                height: 74px;
+            }
+            .group-card-content{
+                margin-left: 0.5rem;
+                font-size:  0.75rem;
+                h3{
+                    font-size: 0.875rem;
+                }
+                label{
+                    display: block;
+                    margin-top: 0.05rem;
+                }
+            }
+        }
+    }
+}
+@media #{$sm} {
+    .groups-grid {
+        margin: -0.625rem;
+        height: 96px
+    }
+    .groups-grid .group-card {
+        width: 50%;
+        float: left;
+        padding: 0 0.625rem;
+    }
+}
+
+@media #{$md} {
+    .groups-grid {
+        margin: 0
+    }
+    .groups-grid .group-card {
+        padding: 0 0.625rem;
+        width: 33.3333333%;
+        float: left;
+    }
+}
