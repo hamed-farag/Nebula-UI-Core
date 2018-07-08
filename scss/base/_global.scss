@@ -202,6 +202,26 @@ hr{
 	border-color: #ddd;
 }
 
+.timeline-close-button{
+	position: absolute;
+	top: 0.125rem;
+	right: 0.4125rem;
+	margin: 0;
+	font-size: 1.5em;
+	background: none;
+	border: none;
+	opacity: 0.55;
+	cursor: pointer;
+	line-height: 1;
+	font-weight: 700;
+	padding: 0.25em;
+	font-family: 'FontAwesome';
+	color: $default-grey-color;
+	&:before {
+		content: "×";
+	}
+}
+
 @media #{$sm} {
 	.page-content {
 		max-width: 40rem;
