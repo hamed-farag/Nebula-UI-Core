@@ -226,6 +226,10 @@ hr{
 	}
 }
 
+.edit-post{
+	border:dashed 1px $primary-color;
+}
+
 @media #{$sm} {
 	.page-content {
 		max-width: 40rem;
