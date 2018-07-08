@@ -1,0 +1,61 @@
+// Page Card
+//
+// Markup: ./styleguide/pageCard.html
+//
+// Styleguide: Components.Page Card
+
+.pages-grid {
+    .page-card{
+        margin-bottom: 1.25rem;
+        div.panel.card{
+            padding-right: 0.5rem !important;
+            a.set-default{
+                width: 168px;
+                label, span{
+                    width: 145px;
+                    cursor: pointer;
+                }
+            }
+            .page-media{
+                width: 3.25rem;
+                float: left;
+                height: 3.25rem;
+                border-radius: 50%;
+            }
+            .page-card-content{
+                margin-left: 0.5rem;
+                font-size:  0.75rem;
+                line-height: 1.2;
+                h3{
+                    font-size: 0.875rem;
+                }
+                label{
+                    display: block;
+                    margin-top: 0.25rem;
+                }
+            }
+        }
+    }
+}
+@media #{$sm} {
+    .pages-grid {
+        margin: -0.625rem;
+        height: 96px
+    }
+    .pages-grid .page-card {
+        width: 50%;
+        float: left;
+        padding: 0 0.625rem;
+    }
+}
+
+@media #{$md} {
+    .pages-grid {
+        margin: 0
+    }
+    .pages-grid .page-card {
+        padding: 0 0.625rem;
+        width: 33.3333333%;
+        float: left;
+    }
+}
