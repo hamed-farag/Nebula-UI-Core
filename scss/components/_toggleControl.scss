@@ -44,5 +44,8 @@
             transition: .3s;
             border-radius: 50%;
         }
+        &:hover:before{
+            background-color: #ddd;
+        }
     }
 }
