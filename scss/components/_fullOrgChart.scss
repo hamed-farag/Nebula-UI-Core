@@ -1,0 +1,63 @@
+// Full Organization Chart
+//
+// Markup: ./styleguide/fullOrgChart.html
+//
+// Styleguide: Components.Full Organization Chart
+
+.org-chart{
+    text-align: center;
+    li{
+        margin-top: 1.5rem;
+        .panel.card{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            max-width: 240px;
+            display: inline-block;
+            .dropdown-content li{
+                margin-top: 0;
+            }
+        }
+        &.current-person .panel.card{
+            box-shadow: 0 0 0px 2px #72bad6;
+        }
+        a.panel.card{
+            max-width: 216px;
+            &:hover, &:focus{
+                background-color: #f2f2f2;
+                box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+                text-decoration: none;
+            }
+            .blurb-content{
+                text-align: left;
+                margin-left: 2.625rem;
+                line-height: 1.2;
+                label.light-grey{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        &.direct-reports {
+            padding-top: 0.75rem;
+            border-top: 2px solid #ccc;
+            a{
+                margin: 0.75rem 0.625rem!important;
+            }
+        }
+    }
+    & > li.current-person, & li.direct-reports {
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            height: 2.5rem;
+            top: -2.5rem;
+            left: 50%;
+            margin-left: -1px;
+            width: 2px;
+            background-color: #ccc;
+            z-index: 0;
+        }
+    }
+}
