@@ -1,0 +1,17 @@
+// Timeline Notifications
+//
+// Markup: ./styleguide/timelineNotifications.html
+//
+// Styleguide: Components.Timeline Notifications
+
+.timeline-notif{
+    background-color: #fff;
+    padding-right: 2.125rem;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.25rem;
+    border-left: solid 4px $primary-color;
+    p + p {
+        margin-top: 0.2875em;
+    }
+}

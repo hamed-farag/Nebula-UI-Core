@@ -188,6 +188,10 @@ hr{
 	color: $primary-color!important;
 }
 
+.danger-text{
+    color: #E10000;
+}
+
 .icon-margin {
 	margin-right: 0.375em;
 }
@@ -220,6 +224,10 @@ hr{
 	&:before {
 		content: "×";
 	}
+}
+
+.edit-post{
+	border:dashed 1px $primary-color;
 }
 
 @media #{$sm} {
