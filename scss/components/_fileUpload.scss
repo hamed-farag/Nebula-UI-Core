@@ -1,0 +1,21 @@
+// File Upload
+//
+// Markup: ./styleguide/fileUpload.html
+//
+// Styleguide: Components.Form Controls.File Upload
+
+.upload-btn-wrapper{
+    position: relative;
+    button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 35px;
+    }
+    input[type="file"] {
+        width:100%;
+        opacity: 0;
+        position: relative;
+        z-index: 10;
+    }
+}
