@@ -6,6 +6,17 @@
     background-color: #1f323a;
 }
 
+.kss-title,
+.kss-header__hamburger {
+    color: #0096c8;
+}
+
+.kss-header__hamburger,
+.kss-header__hamburger::after,
+.kss-header__hamburger::before {
+    background: #0096c8;
+}
+
 .kss-documentation .kss-section .kss-section__content .kss-section__item {
     color: #0096c8;
     font-weight: 700;
