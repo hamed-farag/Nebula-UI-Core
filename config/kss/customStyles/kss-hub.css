@@ -1,0 +1,41 @@
+.kss-documentation {
+    background-color: #f8f8f8;
+}
+
+.kss-navigation {
+    background-color: #1f323a;
+}
+
+.kss-title,
+.kss-header__hamburger {
+    color: #0096c8;
+}
+
+.kss-header__hamburger,
+.kss-header__hamburger::after,
+.kss-header__hamburger::before {
+    background: #0096c8;
+}
+
+.kss-documentation .kss-section .kss-section__content .kss-section__item {
+    color: #0096c8;
+    font-weight: 700;
+}
+
+.kss-markdown h1,
+.kss-markdown h2,
+.kss-markdown h3,
+.kss-navigation h1,
+.kss-documentation .kss-section .kss-modifiers__heading,
+.kss-navigation .kss-nav .kss-nav__item .kss-state-active {
+    color: #0096c8;
+}
+
+.kss-navigation .kss-nav .kss-nav__item a {
+    color: #e4e4e4;
+}
+
+.kss-navigation .kss-nav .kss-nav__item a:hover {
+    color: #0096c8;
+    text-decoration: none;
+}
