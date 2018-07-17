@@ -1,0 +1,59 @@
+// Menu Widget
+//
+// Markup: ./styleguide/menuWidget.html
+//
+// Styleguide: Components.Menu Widget
+
+.menu-widget{
+    .dropdown-header {
+        .tab-control{
+            background: transparent;
+            box-shadow: none;
+            li{
+                width: auto;
+                border-top:0;
+                a{
+                    font-weight: normal;
+                    padding-top: 1.125rem;
+                }
+            }
+        }
+        &.search-container{
+            padding: 0.75rem;
+            .search-bar{
+                font-size: 0.75rem;
+                .form-control.search-control{
+                    font-size: 1em;
+                    border-color:#ccc!important;
+                    height: 2.4375em;
+                }
+            }
+        }
+        &.notification-actions{
+            padding: 0.75rem;
+            font-size: 0.875rem;
+        }
+    }
+    .apps-body{
+        padding: 0.75rem;
+        overflow: hidden;
+    }
+}
+
+@media #{$md}{
+    .menu-widget{
+        .dropdown-content {
+            width: 22rem!important;
+            .dropdown-header{
+                .tab-control{
+                    li{
+                        a{
+                            padding-top: 0.5rem;
+                            font-size: 0.875rem!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

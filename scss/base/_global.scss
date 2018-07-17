@@ -68,6 +68,11 @@ a{
 	}
 }
 
+hr{
+	margin: 1.25rem 0;
+    border-top: solid 1px #ddd;
+}
+
 /**********General Styles**********/
 
 .row:before, .row:after, .tabs-vertical:before, .tabs-vertical:after, .tabs > ul:before, .tabs > ul:after, .tab-content:before, .tab-content:after, .form-field:before, .form-field:after, .check-radio:before, .check-radio:after, .validation:before, .validation:after, .form .hint:before, .form .hint:after, .panel-header:before, .panel-header:after, .panel-footer:before, .panel-footer:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after, .post-actions:before, .post-actions:after, .comment-actions:before, .comment-actions:after, .breadcrumb:before, .breadcrumb:after, .progress:before, .progress:after{
@@ -116,7 +121,7 @@ a{
 }
 
 .full-width{
-	width: 100%;
+	width: 100%!important;
 }
 
 .Padd20 {
@@ -153,8 +158,38 @@ a{
 	@include box-shadow(0px, 0px, 3px, rgba(0, 0, 0, 0.2));
 }
 
+.blurb-img{
+	width: 2.125rem;
+	float: left;
+	font-size: 4em;
+	padding: 0;
+	text-align: center;
+	transition: opacity 0.25s;
+	display: block;
+	cursor: pointer;
+	&:hover{
+		opacity: 0.75;
+		text-decoration: none;                
+	}
+}
+.blurb-photo {
+	padding-top: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 1px 1px #ddd;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .light-grey{
 	color: $lightgrey-color;
+}
+
+.blue-color{
+	color: $primary-color!important;
+}
+
+.danger-text{
+    color: #E10000;
 }
 
 .icon-margin {
@@ -169,6 +204,30 @@ a{
     border-right-width: 0;
 	border-bottom-width: 0;
 	border-color: #ddd;
+}
+
+.timeline-close-button{
+	position: absolute;
+	top: 0.125rem;
+	right: 0.4125rem;
+	margin: 0;
+	font-size: 1.5em;
+	background: none;
+	border: none;
+	opacity: 0.55;
+	cursor: pointer;
+	line-height: 1;
+	font-weight: 700;
+	padding: 0.25em;
+	font-family: 'FontAwesome';
+	color: $default-grey-color;
+	&:before {
+		content: "×";
+	}
+}
+
+.edit-post{
+	border:dashed 1px $primary-color;
 }
 
 @media #{$sm} {

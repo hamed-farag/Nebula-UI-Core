@@ -1,0 +1,61 @@
+// Mini Side Navigation
+//
+// Markup: ./styleguide/miniSideNav.html
+//
+// Styleguide: Components.Mini Side Navigation
+
+.tab-control.mini-side-nav{
+    background-color: #fff;
+    box-shadow: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
+    ul{
+        li{
+            a{
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media #{$md} {
+    .tab-control.mini-side-nav{
+        background: transparent;
+        box-shadow: none;
+        ul{
+            li{
+                display: block;
+                margin-left: 0;
+                margin-top: 0.25rem;
+                &:first-child{
+                    margin-top: 0;
+                }
+                &.active{
+                    a{
+                        border-left: solid 3px #2199ca;
+                        border-bottom: none;
+                        background-color: rgba(0,0,0,0.05);
+                        &:hover, &:focus{
+                            background-color: rgba(0,0,0,0.1);
+                        }
+                    }
+                }
+                a{
+                    padding: 0.5em 1rem;
+                    &:hover, &:focus{
+                        border-bottom: none;
+                        background-color:rgba(0,0,0,0.05);
+                    }
+                    i{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

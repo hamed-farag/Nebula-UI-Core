@@ -145,6 +145,18 @@
 
         }
     }
+    .dropdown-footer{
+        border-top: solid 1px #ddd;
+        background-color: #f8f8f8;
+        line-height: 1.25;
+        font-size: 0.875rem;
+        a{
+            display: block;
+            padding: 0.5rem 0.75rem;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
     &.inverted > .dropdown-content {
         top: auto;
         bottom: 130%;

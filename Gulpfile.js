@@ -51,7 +51,7 @@ gulp.task('semver', function (stage) {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('prod', function () {
+gulp.task('prod', ['copyCustomStyle'], function () {
 	return gulp.src(input)
 		.pipe(sass({
 			outputStyle: 'compressed'
@@ -59,6 +59,12 @@ gulp.task('prod', function () {
 		.pipe(autoprefixer(autoprefixerOptions))
 		.pipe(rename("/nebula-ui.min.css"))
 		.pipe(gulp.dest(output + '/prod/nebula-ui/' + pkg.version));
+});
+
+gulp.task('copyCustomStyle', function () {
+	return gulp
+		.src('./config/kss/customStyles/kss-hub.css')
+		.pipe(gulp.dest(output + '/prod/nebula-ui/' + pkg.version + '/kss'));
 });
 
 gulp.task('styleguide', function (cb) {

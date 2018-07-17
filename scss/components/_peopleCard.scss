@@ -1,0 +1,94 @@
+// People Card
+//
+// Markup: ./styleguide/peopleCard.html
+//
+// Styleguide: Components.People Card
+
+.people-card{
+    margin-bottom: 1.25rem;
+    .blurb{
+        text-align: center;
+        .blurb-img{
+            width: 7.5rem;
+            float: none;
+            margin: 0 auto 0.5rem;
+            max-width: 6rem;
+            .blurb-photo{
+                border: 0;
+                box-shadow: none;
+            }
+        }
+        .blurb-content{
+            margin: 0 auto;
+            h3{
+                a{
+                    font-weight: bold;
+                }
+            }
+            label.people-info{
+                margin-top: 0.2rem;
+                font-size: 12px;
+                display: block;
+                line-height: 1.32;
+            }
+            .dropdown{
+                button{
+                    margin-top: 0.75rem;
+                    background-color: #f6f6f6;
+                    border: solid 1px #b2b2b2;
+                    font-size: 0.75rem;
+                }
+                .dropdown-content{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .people-card-footer{
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        a{
+            margin-right:5px;
+            font-size: 0.75rem;
+            &:last-child{
+               margin-right:0
+            }
+            i{
+                border:solid 1px $primary-color;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                &:hover{
+                    background-color: $primary-color;
+                    color:#fff
+                }
+            }
+        }
+    }
+}
+
+@media #{$sm} {
+    .people-grid {
+        margin: -0.625rem
+    }
+    .people-grid .people-card {
+        padding: 0.625rem;
+        width: 50%;
+        float: left;    
+        margin-bottom: 0;
+    }
+}
+
+@media #{$md} {
+    .people-grid {
+        margin: 0
+    }
+    .people-grid .people-card {
+        padding: 0.625rem;
+        width: 20%;
+        float: left;
+        margin-bottom: 0;
+    }
+}

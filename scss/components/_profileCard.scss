@@ -1,0 +1,55 @@
+// Profile Card
+//
+// Markup: ./styleguide/profileCard.html
+//
+// Styleguide: Components.Profile Card
+
+.profile-card{
+    .blurb{
+        padding: 0.5rem 0;
+        text-align: center;
+        .blurb-img{
+            width: 7.5rem;
+            float: none;
+            margin: -5.25rem auto 1rem;
+            .blurb-photo{
+                border: 4px solid #fff;
+                box-shadow: none;
+            }
+        }
+        h3{
+            a{
+                color:$default-grey-color;
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+        }
+        label.people-info{
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            display: block;
+            line-height: 1.32;
+        }
+        button{
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+@media #{$md} {
+    .profile-left-cont{
+        .profile-card{
+            .blurb{
+                .blurb-img{
+                    margin-top: 0;
+                    .blurb-photo{
+                        border:0;
+                    }
+                }
+                button{
+                    display: none;
+                }  
+            }
+        }
+    }
+}
