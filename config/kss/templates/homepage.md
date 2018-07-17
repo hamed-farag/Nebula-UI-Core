@@ -19,6 +19,6 @@ A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized ga
 <link 
     rel="stylesheet" 
     type="text/css" 
-    href="https://itworxhubstatic.azureedge.net/nebula-ui/1.0.0/nebula-ui.min.css"/>
+    href="https://itworxhubstatic.azureedge.net/nebula-ui/1.1.0/nebula-ui.min.css"/>
 ```
 
