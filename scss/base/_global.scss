@@ -61,7 +61,7 @@ h5{
 }
 
 a{
-	color: #2199ca;
+	color: $thePrimaryColor;
 	text-decoration: none;
 	&:hover, &:focus {
 		text-decoration: underline;
@@ -134,6 +134,7 @@ hr{
 }
 
 .panel {
+  	border-radius: $theCurvyEdge;
     font-size: 0.875rem;
     padding: 0.75rem;
     .panel-header{
@@ -141,12 +142,17 @@ hr{
 		border-bottom:solid 1px #ddd;
 		margin: -0.75rem -0.75rem 0.75rem;
 		padding: 0.625rem 0.75rem;
+		border-top-right-radius: $theCurvyEdge;
+    border-top-left-radius: $theCurvyEdge;
 	}
     .panel-footer{
-        background-color: #f6f6f6;
-        border-top: solid 1px #ddd;
-        margin: 0.75rem -0.75rem -0.75rem;
-		padding: 0.75rem;
+    	background-color: #f6f6f6;
+    	border-top: solid 1px #ddd;
+      margin: 0.75rem -0.75rem -0.75rem;
+			padding: 0.75rem;
+			border-bottom-right-radius: $theCurvyEdge;
+			border-bottom-left-radius: $theCurvyEdge;
+			overflow: hidden;
 	}
 }
 
@@ -154,8 +160,8 @@ hr{
     margin-bottom: 0;
 }
 .card{
-    background-color: $white-color;
-	@include box-shadow(0px, 0px, 3px, rgba(0, 0, 0, 0.2));
+		background-color: $white-color;
+		box-shadow: $theGlobalShadow;
 }
 
 .blurb-img{
@@ -185,7 +191,7 @@ hr{
 }
 
 .blue-color{
-	color: $primary-color!important;
+	color: $thePrimaryColor!important;
 }
 
 .danger-text{
@@ -227,7 +233,7 @@ hr{
 }
 
 .edit-post{
-	border:dashed 1px $primary-color;
+	border:dashed 1px $thePrimaryColor;
 }
 
 @media #{$sm} {

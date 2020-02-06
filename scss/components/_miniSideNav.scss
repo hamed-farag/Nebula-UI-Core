@@ -37,7 +37,7 @@
                 }
                 &.active{
                     a{
-                        border-left: solid 3px #2199ca;
+                        border-left: solid 3px $thePrimaryColor;
                         border-bottom: none;
                         background-color: rgba(0,0,0,0.05);
                         &:hover, &:focus{

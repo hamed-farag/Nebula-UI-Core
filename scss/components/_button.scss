@@ -1,4 +1,5 @@
 .button{
+    border-radius: 15px;
     font-size: 0.75rem;
     transition: color 0.15s, background-color 0.15s, border-color 0.15s;
     cursor: pointer;
@@ -17,16 +18,16 @@
         cursor: default !important;
     }
     &.primary-button {
-        background-color: $primary-color;
-        border: solid 1px $primary-color;
+        background-color: $thePrimaryColor;
+        border: solid 1px $thePrimaryColor;
         color: $white-color;
         &:hover, &:focus {
-            border-color: $button-hover-color;
-            background-color: $button-hover-color;
+            border-color: $theBTNHoverColor;
+            background-color: $theBTNHoverColor; // todo: hub is not using border
         }
         &:active {
-            border-color: $button-active-color;
-            background-color: $button-active-color;
+            border-color: $theBTNActiveColor;
+            background-color: $theBTNActiveColor;// todo: hub is not using border
         }
     }
     
@@ -45,6 +46,7 @@
     }
     
     &.small-button {
+        
         height: 1.625rem!important;
         padding: 0 0.75rem;
         line-height: 1;
@@ -88,6 +90,7 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
+    
     &.dropdown-open > .dropdown-content{
         display: block;
     }
@@ -98,6 +101,7 @@
     }
     .dropdown-trigger{
         display: block;
+        border-radius: 15px;
     }
     .dropdown-content{
         display: none;
@@ -113,6 +117,8 @@
         margin-top: 0.375rem;
         margin-bottom: 0.375rem;
         padding: 0.375em 0;
+        border-radius: $theCurvyEdge;
+        overflow: hidden;
         li{
             width:100%;
             a{
@@ -139,7 +145,7 @@
                 }
             }
             &.dropdown-active a{
-                background-color: #2199ca !important;
+                background-color: $thePrimaryColor !important;
                 color: #fff !important;
             }
 

@@ -4,31 +4,47 @@
 //
 // Styleguide: Components.Widget
 
-@import '../abstracts/variables';
+@import "../abstracts/variables";
 .widget {
-    background: $white-color;
-    border-color: #ddd;
-    header {
-        background-color: #f6f6f6;
-        color: $default-grey-color;
-        padding: 5px;
-        h3 {
-            font-size: 0.875rem;
-        }
+  background: $white-color;
+  border-color: #ddd;
+  // box-shadow: $theGlobalShadow;
+  border-radius: $theCurvyEdge;
+  header {
+    background-color: $white-color !important;
+    color: $default-grey-color;
+    padding: 5px; // not applied 
+    border-top-right-radius: $theCurvyEdge;
+    border-top-left-radius: $theCurvyEdge;
+    // todo test
+    padding: 20px !important;
+
+    h3 {
+      font-size: 0.875rem;
     }
-    .widget-body {
-        padding: 5px;
+  }
+  .widget-body {
+    padding: 5px;
+    border-bottom-right-radius: $theCurvyEdge;
+    border-bottom-left-radius: $theCurvyEdge;
+
+  }
+  footer {
+    background-color: $white-color !important;
+    border-bottom-right-radius: $theCurvyEdge;
+    border-bottom-left-radius: $theCurvyEdge;
+   
+    a {
+      font-size: 0.875rem;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0.75rem;
+      //todo : test
+      text-align: center;
+      padding: 20px;
+      &:hover {
+        background-color: #f0f0f0;
+      }
     }
-    footer {
-        background-color: #f6f6f6;
-        a {
-            font-size: 0.875rem;
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem 0.75rem;
-            &:hover {
-                background-color: #f0f0f0;
-            }
-        }
-    }
+  }
 }

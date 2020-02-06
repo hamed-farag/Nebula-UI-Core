@@ -23,7 +23,7 @@ ul.tab-filters{
                 background-color: #f2f2f2;
             }
             &.selected{
-                background-color: #2199ca;
+                background-color: $thePrimaryColor;
                 color: #fff;
                 i.fa-chevron-right{
                     display: none;

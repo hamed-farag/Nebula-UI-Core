@@ -5,6 +5,11 @@
 // Styleguide: Components.Events List
 
 .events-list{
+    overflow: hidden;//todo: think of somthing better
+    .panel-header{
+        background-color: $white-color;
+        padding:20px; //todo : used ktir fa n5aleha variable?
+    }
     h3{
         font-size: 0.875rem;
         font-weight: bold;
@@ -47,6 +52,10 @@
                     padding-left: 1.5rem;
                     line-height: 2
                 }
+            }
+
+            &:last-child{
+                border-bottom:none;
             }
         }
     }

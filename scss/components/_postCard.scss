@@ -53,7 +53,7 @@
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
-        background-color: #2199ca;
+        background-color: $thePrimaryColor;
         border-radius: 50%;
     }
     .post-action-counts{
@@ -210,7 +210,7 @@
                         appearance: none;
                         cursor: pointer;
                         &:hover, &:focus{
-                            color: #2199ca;
+                            color: $thePrimaryColor;
                         }
                     }
                 }
@@ -227,7 +227,7 @@
     color: #f90e90;
 }
 .reaction-icon.fa-thumbs-up, .post-actions .fi-button.user-thumbs-up {
-    color: #2199ca;
+    color: $thePrimaryColor;
 }
 
 @media #{$md}{

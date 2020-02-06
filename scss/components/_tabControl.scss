@@ -19,7 +19,7 @@
             &.active{
                 a{
                     font-weight: bold!important;
-                    border-bottom: solid 3px #2199ca;
+                    border-bottom: solid 3px $thePrimaryColor;
                     padding-bottom: 9px;
                 }
             }
@@ -30,7 +30,7 @@
                 color:$default-grey-color;
                 &:hover, &:focus{
                     text-decoration: none;
-                    border-bottom: solid 3px #2199ca;
+                    border-bottom: solid 3px $thePrimaryColor;
                     padding-bottom: 9px;
                 }
             }

@@ -8,7 +8,8 @@
     width: 100%;
     &.dropdown-open{
         button.dropdown-trigger{
-            color:#2199CA !important;
+            border-radius: 0;
+            color:$thePrimaryColor !important;
         }
     }
     button.dropdown-trigger{

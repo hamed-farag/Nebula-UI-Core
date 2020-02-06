@@ -5,11 +5,14 @@
 // Styleguide: Content.Create Post
 
 .create-post{
+    border-radius: $theCurvyEdge;
     ul{
         li{
             float: left;
             margin: 0;
             button{
+                // border-top-right-radius: $theCurvyEdge;
+                // border-top-left-radius: $theCurvyEdge;
                 padding: 0;
                 width: 2.5rem;
                 height: 2.25rem;
@@ -23,19 +26,27 @@
                 font-size: 0.875rem;
                 &:hover, &:focus{
                     background-color: #f6f6f6;
-                    color: #2199ca;
+                    color: $thePrimaryColor;
                     outline: none;
                 }
                 &.active{
-                    background-color: #2199ca;
+                    background-color: $thePrimaryColor;
                     color: #fff;
                     &:focus{
-                        background-color: #1278a2;
+                        background-color: $theBTNHoverColor;
                     }
                 }
-                .dropdown-content {
-                    margin: 0;
-                    margin-left: -1px;
+                &.dropdown-trigger {
+                    border-radius: 0;
+                }
+            }
+            .dropdown-content {
+                margin: 0;
+                margin-left: -1px;
+            }
+            &:first-child {
+                button {
+                    border-top-left-radius: $theCurvyEdge;
                 }
             }
         }

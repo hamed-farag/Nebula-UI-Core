@@ -60,6 +60,7 @@
 		"michelangelo": "^0.7.0",
 		"mocha": "^5.2.0",
 		"mocha-junit-reporter": "^1.17.0",
-		"sass-true": "^4.0.0"
+		"sass-true": "^4.0.0",
+		"natives": "^1.1.6"
 	}
 }

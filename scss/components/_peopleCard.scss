@@ -39,6 +39,7 @@
                     font-size: 0.75rem;
                 }
                 .dropdown-content{
+                    border-radius: $theCurvyEdge;
                     text-align: left;
                 }
             }
@@ -55,14 +56,14 @@
                margin-right:0
             }
             i{
-                border:solid 1px $primary-color;
+                border:solid 1px $thePrimaryColor;
                 border-radius: 50%;
                 width: 24px;
                 height: 24px;
                 line-height: 24px;
                 &:hover{
-                    background-color: $primary-color;
-                    color:#fff
+                    background-color: $thePrimaryColor;
+                    color:#fff //todo : on hover nothing happens in hub 
                 }
             }
         }
